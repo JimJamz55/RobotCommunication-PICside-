@@ -1,0 +1,1578 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[v F6815 `(v ~T0 @X0 0 tf ]
+[v F6817 `(v ~T0 @X0 0 tf ]
+[v F6861 `(v ~T0 @X0 0 tf ]
+[v F6863 `(v ~T0 @X0 0 tf ]
+[v F6865 `(v ~T0 @X0 0 tf ]
+[v F6867 `(v ~T0 @X0 0 tf ]
+"36 mcc_generated_files/drivers/i2c_slave.c
+[; ;mcc_generated_files/drivers/i2c_slave.c: 36: volatile i2c_state_t state = Address;
+[c E6869 0 1 2 .. ]
+[n E6869 . Address I2C_TX I2C_RX  ]
+[v F6847 `(v ~T0 @X0 0 tf ]
+"71 mcc_generated_files/drivers/i2c_slave.h
+[; ;mcc_generated_files/drivers/i2c_slave.h: 71: void i2c_slave_setIsrHandler(interruptHandler handler);
+[v _i2c_slave_setIsrHandler `(v ~T0 @X0 0 ef1`*F6847 ]
+"44
+[; ;mcc_generated_files/drivers/i2c_slave.h: 44: void i2c_slave_ISR ( void );
+[v _i2c_slave_ISR `(v ~T0 @X0 0 ef ]
+"64 mcc_generated_files/drivers/../i2c1_driver.h
+[; ;mcc_generated_files/drivers/../i2c1_driver.h: 64: __bit i2c1_driver_initSlaveHardware(void);
+[v _i2c1_driver_initSlaveHardware `(b ~T0 @X0 0 ef ]
+[v F6759 `(v ~T0 @X0 1 tf1`uc ]
+"51
+[; ;mcc_generated_files/drivers/../i2c1_driver.h: 51: __attribute__((inline)) void i2c1_driver_setAddr(char addr);
+[v _i2c1_driver_setAddr `TF6759 ~T0 @X0 0 e ]
+[v F6762 `(v ~T0 @X0 1 tf1`uc ]
+"52
+[; ;mcc_generated_files/drivers/../i2c1_driver.h: 52: __attribute__((inline)) void i2c1_driver_setMask(char mask);
+[v _i2c1_driver_setMask `TF6762 ~T0 @X0 0 e ]
+[v F6805 `(v ~T0 @X0 0 tf ]
+[v F6806 `(v ~T0 @X0 1 tf1`*F6805 ]
+"75
+[; ;mcc_generated_files/drivers/../i2c1_driver.h: 75: __attribute__((inline)) void i2c1_driver_setBusCollisionISR(interruptHandler handler);
+[v _i2c1_driver_setBusCollisionISR `TF6806 ~T0 @X0 0 e ]
+"73 mcc_generated_files/drivers/i2c_slave.h
+[; ;mcc_generated_files/drivers/i2c_slave.h: 73: void i2c_slave_BusCollisionISR(void);
+[v _i2c_slave_BusCollisionISR `(v ~T0 @X0 0 ef ]
+[v F6836 `(v ~T0 @X0 0 tf ]
+"60
+[; ;mcc_generated_files/drivers/i2c_slave.h: 60: void i2c_slave_setWriteIntHandler(interruptHandler handler);
+[v _i2c_slave_setWriteIntHandler `(v ~T0 @X0 0 ef1`*F6836 ]
+"61
+[; ;mcc_generated_files/drivers/i2c_slave.h: 61: void i2c_slave_DefWrInterruptHandler(void);
+[v _i2c_slave_DefWrInterruptHandler `(v ~T0 @X0 0 ef ]
+[v F6830 `(v ~T0 @X0 0 tf ]
+"54
+[; ;mcc_generated_files/drivers/i2c_slave.h: 54: void i2c_slave_setReadIntHandler(interruptHandler handler);
+[v _i2c_slave_setReadIntHandler `(v ~T0 @X0 0 ef1`*F6830 ]
+"55
+[; ;mcc_generated_files/drivers/i2c_slave.h: 55: void i2c_slave_DefRdInterruptHandler(void);
+[v _i2c_slave_DefRdInterruptHandler `(v ~T0 @X0 0 ef ]
+[v F6842 `(v ~T0 @X0 0 tf ]
+"66
+[; ;mcc_generated_files/drivers/i2c_slave.h: 66: void i2c_slave_setAddrIntHandler(interruptHandler handler);
+[v _i2c_slave_setAddrIntHandler `(v ~T0 @X0 0 ef1`*F6842 ]
+"67
+[; ;mcc_generated_files/drivers/i2c_slave.h: 67: void i2c_slave_DefAddrInterruptHandler(void);
+[v _i2c_slave_DefAddrInterruptHandler `(v ~T0 @X0 0 ef ]
+[v F6856 `(v ~T0 @X0 0 tf ]
+"74
+[; ;mcc_generated_files/drivers/i2c_slave.h: 74: void i2c_slave_setWCOLIntHandler(interruptHandler handler);
+[v _i2c_slave_setWCOLIntHandler `(v ~T0 @X0 0 ef1`*F6856 ]
+[v F6737 `(v ~T0 @X0 1 tf ]
+"36 mcc_generated_files/drivers/../i2c1_driver.h
+[; ;mcc_generated_files/drivers/../i2c1_driver.h: 36: __attribute__((inline)) void i2c1_driver_close(void);
+[v _i2c1_driver_close `TF6737 ~T0 @X0 0 e ]
+[v F6745 `(v ~T0 @X0 1 tf ]
+"42
+[; ;mcc_generated_files/drivers/../i2c1_driver.h: 42: __attribute__((inline)) void mssp1_clearIRQ(void);
+[v _mssp1_clearIRQ `TF6745 ~T0 @X0 0 e ]
+[v F6755 `(uc ~T0 @X0 1 tf ]
+"49
+[; ;mcc_generated_files/drivers/../i2c1_driver.h: 49: __attribute__((inline)) char i2c1_driver_getRXData(void);
+[v _i2c1_driver_getRXData `TF6755 ~T0 @X0 0 e ]
+[v F6799 `(b ~T0 @X0 1 tf ]
+"71
+[; ;mcc_generated_files/drivers/../i2c1_driver.h: 71: __attribute__((inline)) __bit i2c1_driver_isRead(void);
+[v _i2c1_driver_isRead `TF6799 ~T0 @X0 0 e ]
+[v F6801 `(b ~T0 @X0 1 tf ]
+"72
+[; ;mcc_generated_files/drivers/../i2c1_driver.h: 72: __attribute__((inline)) __bit i2c1_driver_isWriteCollision(void);
+[v _i2c1_driver_isWriteCollision `TF6801 ~T0 @X0 0 e ]
+"59 mcc_generated_files/drivers/i2c_slave.h
+[; ;mcc_generated_files/drivers/i2c_slave.h: 59: void i2c_slave_WrCallBack(void);
+[v _i2c_slave_WrCallBack `(v ~T0 @X0 0 ef ]
+"75
+[; ;mcc_generated_files/drivers/i2c_slave.h: 75: void i2c_slave_WCOLCallBack(void);
+[v _i2c_slave_WCOLCallBack `(v ~T0 @X0 0 ef ]
+[v F6772 `(v ~T0 @X0 1 tf ]
+"56 mcc_generated_files/drivers/../i2c1_driver.h
+[; ;mcc_generated_files/drivers/../i2c1_driver.h: 56: __attribute__((inline)) void i2c1_driver_restart(void);
+[v _i2c1_driver_restart `TF6772 ~T0 @X0 0 e ]
+[v F6797 `(b ~T0 @X0 1 tf ]
+"70
+[; ;mcc_generated_files/drivers/../i2c1_driver.h: 70: __attribute__((inline)) __bit i2c1_driver_isData(void);
+[v _i2c1_driver_isData `TF6797 ~T0 @X0 0 e ]
+"53 mcc_generated_files/drivers/i2c_slave.h
+[; ;mcc_generated_files/drivers/i2c_slave.h: 53: void i2c_slave_RdCallBack(void);
+[v _i2c_slave_RdCallBack `(v ~T0 @X0 0 ef ]
+"65
+[; ;mcc_generated_files/drivers/i2c_slave.h: 65: void i2c_slave_AddrCallBack(void);
+[v _i2c_slave_AddrCallBack `(v ~T0 @X0 0 ef ]
+[v F6787 `(v ~T0 @X0 1 tf ]
+"65 mcc_generated_files/drivers/../i2c1_driver.h
+[; ;mcc_generated_files/drivers/../i2c1_driver.h: 65: __attribute__((inline)) void i2c1_driver_releaseClock(void);
+[v _i2c1_driver_releaseClock `TF6787 ~T0 @X0 0 e ]
+[v F6765 `(v ~T0 @X0 1 tf1`uc ]
+"53
+[; ;mcc_generated_files/drivers/../i2c1_driver.h: 53: __attribute__((inline)) void i2c1_driver_TXData(char d);
+[v _i2c1_driver_TXData `TF6765 ~T0 @X0 0 e ]
+[v F6780 `(v ~T0 @X0 1 tf ]
+"60
+[; ;mcc_generated_files/drivers/../i2c1_driver.h: 60: __attribute__((inline)) void i2c1_driver_sendACK(void);
+[v _i2c1_driver_sendACK `TF6780 ~T0 @X0 0 e ]
+[v F6782 `(v ~T0 @X0 1 tf ]
+"61
+[; ;mcc_generated_files/drivers/../i2c1_driver.h: 61: __attribute__((inline)) void i2c1_driver_sendNACK(void);
+[v _i2c1_driver_sendNACK `TF6782 ~T0 @X0 0 e ]
+[v F6895 `(v ~T0 @X0 0 tf ]
+[v F6897 `(v ~T0 @X0 0 tf ]
+[v F6899 `(v ~T0 @X0 0 tf ]
+[v F6810 `(v ~T0 @X0 0 tf ]
+[v F6811 `(v ~T0 @X0 1 tf1`*F6810 ]
+"76
+[; ;mcc_generated_files/drivers/../i2c1_driver.h: 76: __attribute__((inline)) void i2c1_driver_setI2cISR(interruptHandler handler);
+[v _i2c1_driver_setI2cISR `TF6811 ~T0 @X0 0 e ]
+[v F6901 `(v ~T0 @X0 0 tf ]
+[v F6903 `(v ~T0 @X0 0 tf ]
+[v F6905 `(v ~T0 @X0 0 tf ]
+[v F6907 `(v ~T0 @X0 0 tf ]
+[v F6911 `(v ~T0 @X0 0 tf ]
+[v F6913 `(v ~T0 @X0 0 tf ]
+[v F6915 `(v ~T0 @X0 0 tf ]
+[v F6919 `(v ~T0 @X0 0 tf ]
+[v F6921 `(v ~T0 @X0 0 tf ]
+[v F6923 `(v ~T0 @X0 0 tf ]
+[v F6757 `(uc ~T0 @X0 1 tf ]
+"50
+[; ;mcc_generated_files/drivers/../i2c1_driver.h: 50: __attribute__((inline)) char i2c1_driver_getAddr(void);
+[v _i2c1_driver_getAddr `TF6757 ~T0 @X0 0 e ]
+[v F6927 `(v ~T0 @X0 0 tf ]
+[v F6929 `(v ~T0 @X0 0 tf ]
+[v F6931 `(v ~T0 @X0 0 tf ]
+"110 /opt/microchip/xc8/v2.00/pic/include/pic16f15325.h
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 110: __asm("INDF0 equ 00h");
+[; <" INDF0 equ 00h ;# ">
+"130
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 130: __asm("INDF1 equ 01h");
+[; <" INDF1 equ 01h ;# ">
+"150
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 150: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"170
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 170: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"233
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 233: __asm("FSR0L equ 04h");
+[; <" FSR0L equ 04h ;# ">
+"253
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 253: __asm("FSR0H equ 05h");
+[; <" FSR0H equ 05h ;# ">
+"277
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 277: __asm("FSR1L equ 06h");
+[; <" FSR1L equ 06h ;# ">
+"297
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 297: __asm("FSR1H equ 07h");
+[; <" FSR1H equ 07h ;# ">
+"317
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 317: __asm("BSR equ 08h");
+[; <" BSR equ 08h ;# ">
+"375
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 375: __asm("WREG equ 09h");
+[; <" WREG equ 09h ;# ">
+"395
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 395: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"415
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 415: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"448
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 448: __asm("PORTA equ 0Ch");
+[; <" PORTA equ 0Ch ;# ">
+"498
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 498: __asm("PORTC equ 0Eh");
+[; <" PORTC equ 0Eh ;# ">
+"548
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 548: __asm("TRISA equ 012h");
+[; <" TRISA equ 012h ;# ">
+"593
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 593: __asm("TRISC equ 014h");
+[; <" TRISC equ 014h ;# ">
+"643
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 643: __asm("LATA equ 018h");
+[; <" LATA equ 018h ;# ">
+"688
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 688: __asm("LATC equ 01Ah");
+[; <" LATC equ 01Ah ;# ">
+"738
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 738: __asm("ADRES equ 09Bh");
+[; <" ADRES equ 09Bh ;# ">
+"745
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 745: __asm("ADRESL equ 09Bh");
+[; <" ADRESL equ 09Bh ;# ">
+"815
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 815: __asm("ADRESH equ 09Ch");
+[; <" ADRESH equ 09Ch ;# ">
+"885
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 885: __asm("ADCON0 equ 09Dh");
+[; <" ADCON0 equ 09Dh ;# ">
+"956
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 956: __asm("ADCON1 equ 09Eh");
+[; <" ADCON1 equ 09Eh ;# ">
+"1022
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1022: __asm("ADACT equ 09Fh");
+[; <" ADACT equ 09Fh ;# ">
+"1074
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1074: __asm("RC1REG equ 0119h");
+[; <" RC1REG equ 0119h ;# ">
+"1079
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1079: __asm("RCREG equ 0119h");
+[; <" RCREG equ 0119h ;# ">
+"1083
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1083: __asm("RCREG1 equ 0119h");
+[; <" RCREG1 equ 0119h ;# ">
+"1128
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1128: __asm("TX1REG equ 011Ah");
+[; <" TX1REG equ 011Ah ;# ">
+"1133
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1133: __asm("TXREG1 equ 011Ah");
+[; <" TXREG1 equ 011Ah ;# ">
+"1137
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1137: __asm("TXREG equ 011Ah");
+[; <" TXREG equ 011Ah ;# ">
+"1182
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1182: __asm("SP1BRG equ 011Bh");
+[; <" SP1BRG equ 011Bh ;# ">
+"1189
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1189: __asm("SP1BRGL equ 011Bh");
+[; <" SP1BRGL equ 011Bh ;# ">
+"1194
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1194: __asm("SPBRG equ 011Bh");
+[; <" SPBRG equ 011Bh ;# ">
+"1198
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1198: __asm("SPBRG1 equ 011Bh");
+[; <" SPBRG1 equ 011Bh ;# ">
+"1202
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1202: __asm("SPBRGL equ 011Bh");
+[; <" SPBRGL equ 011Bh ;# ">
+"1259
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1259: __asm("SP1BRGH equ 011Ch");
+[; <" SP1BRGH equ 011Ch ;# ">
+"1264
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1264: __asm("SPBRGH equ 011Ch");
+[; <" SPBRGH equ 011Ch ;# ">
+"1268
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1268: __asm("SPBRGH1 equ 011Ch");
+[; <" SPBRGH1 equ 011Ch ;# ">
+"1313
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1313: __asm("RC1STA equ 011Dh");
+[; <" RC1STA equ 011Dh ;# ">
+"1318
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1318: __asm("RCSTA1 equ 011Dh");
+[; <" RCSTA1 equ 011Dh ;# ">
+"1322
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1322: __asm("RCSTA equ 011Dh");
+[; <" RCSTA equ 011Dh ;# ">
+"1493
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1493: __asm("TX1STA equ 011Eh");
+[; <" TX1STA equ 011Eh ;# ">
+"1498
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1498: __asm("TXSTA1 equ 011Eh");
+[; <" TXSTA1 equ 011Eh ;# ">
+"1502
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1502: __asm("TXSTA equ 011Eh");
+[; <" TXSTA equ 011Eh ;# ">
+"1673
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1673: __asm("BAUD1CON equ 011Fh");
+[; <" BAUD1CON equ 011Fh ;# ">
+"1678
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1678: __asm("BAUDCON1 equ 011Fh");
+[; <" BAUDCON1 equ 011Fh ;# ">
+"1682
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1682: __asm("BAUDCTL1 equ 011Fh");
+[; <" BAUDCTL1 equ 011Fh ;# ">
+"1686
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1686: __asm("BAUDCON equ 011Fh");
+[; <" BAUDCON equ 011Fh ;# ">
+"1690
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1690: __asm("BAUDCTL equ 011Fh");
+[; <" BAUDCTL equ 011Fh ;# ">
+"1919
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1919: __asm("SSP1BUF equ 018Ch");
+[; <" SSP1BUF equ 018Ch ;# ">
+"1939
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 1939: __asm("SSP1ADD equ 018Dh");
+[; <" SSP1ADD equ 018Dh ;# ">
+"2059
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 2059: __asm("SSP1MSK equ 018Eh");
+[; <" SSP1MSK equ 018Eh ;# ">
+"2129
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 2129: __asm("SSP1STAT equ 018Fh");
+[; <" SSP1STAT equ 018Fh ;# ">
+"2493
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 2493: __asm("SSP1CON1 equ 0190h");
+[; <" SSP1CON1 equ 0190h ;# ">
+"2613
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 2613: __asm("SSP1CON2 equ 0191h");
+[; <" SSP1CON2 equ 0191h ;# ">
+"2800
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 2800: __asm("SSP1CON3 equ 0192h");
+[; <" SSP1CON3 equ 0192h ;# ">
+"2862
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 2862: __asm("TMR1 equ 020Ch");
+[; <" TMR1 equ 020Ch ;# ">
+"2869
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 2869: __asm("TMR1L equ 020Ch");
+[; <" TMR1L equ 020Ch ;# ">
+"3039
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 3039: __asm("TMR1H equ 020Dh");
+[; <" TMR1H equ 020Dh ;# ">
+"3159
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 3159: __asm("T1CON equ 020Eh");
+[; <" T1CON equ 020Eh ;# ">
+"3255
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 3255: __asm("T1GCON equ 020Fh");
+[; <" T1GCON equ 020Fh ;# ">
+"3260
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 3260: __asm("PR1 equ 020Fh");
+[; <" PR1 equ 020Fh ;# ">
+"3451
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 3451: __asm("T1GATE equ 0210h");
+[; <" T1GATE equ 0210h ;# ">
+"3456
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 3456: __asm("TMR1GATE equ 0210h");
+[; <" TMR1GATE equ 0210h ;# ">
+"3617
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 3617: __asm("T1CLK equ 0211h");
+[; <" T1CLK equ 0211h ;# ">
+"3622
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 3622: __asm("TMR1CLK equ 0211h");
+[; <" TMR1CLK equ 0211h ;# ">
+"3759
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 3759: __asm("T2TMR equ 028Ch");
+[; <" T2TMR equ 028Ch ;# ">
+"3764
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 3764: __asm("TMR2 equ 028Ch");
+[; <" TMR2 equ 028Ch ;# ">
+"3813
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 3813: __asm("T2PR equ 028Dh");
+[; <" T2PR equ 028Dh ;# ">
+"3818
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 3818: __asm("PR2 equ 028Dh");
+[; <" PR2 equ 028Dh ;# ">
+"3867
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 3867: __asm("T2CON equ 028Eh");
+[; <" T2CON equ 028Eh ;# ">
+"4013
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 4013: __asm("T2HLT equ 028Fh");
+[; <" T2HLT equ 028Fh ;# ">
+"4141
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 4141: __asm("T2CLKCON equ 0290h");
+[; <" T2CLKCON equ 0290h ;# ">
+"4221
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 4221: __asm("T2RST equ 0291h");
+[; <" T2RST equ 0291h ;# ">
+"4301
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 4301: __asm("CCPR1 equ 030Ch");
+[; <" CCPR1 equ 030Ch ;# ">
+"4308
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 4308: __asm("CCPR1L equ 030Ch");
+[; <" CCPR1L equ 030Ch ;# ">
+"4328
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 4328: __asm("CCPR1H equ 030Dh");
+[; <" CCPR1H equ 030Dh ;# ">
+"4348
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 4348: __asm("CCP1CON equ 030Eh");
+[; <" CCP1CON equ 030Eh ;# ">
+"4475
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 4475: __asm("CCP1CAP equ 030Fh");
+[; <" CCP1CAP equ 030Fh ;# ">
+"4543
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 4543: __asm("CCPR2 equ 0310h");
+[; <" CCPR2 equ 0310h ;# ">
+"4550
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 4550: __asm("CCPR2L equ 0310h");
+[; <" CCPR2L equ 0310h ;# ">
+"4570
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 4570: __asm("CCPR2H equ 0311h");
+[; <" CCPR2H equ 0311h ;# ">
+"4590
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 4590: __asm("CCP2CON equ 0312h");
+[; <" CCP2CON equ 0312h ;# ">
+"4717
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 4717: __asm("CCP2CAP equ 0313h");
+[; <" CCP2CAP equ 0313h ;# ">
+"4785
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 4785: __asm("PWM3DC equ 0314h");
+[; <" PWM3DC equ 0314h ;# ">
+"4792
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 4792: __asm("PWM3DCL equ 0314h");
+[; <" PWM3DCL equ 0314h ;# ">
+"4858
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 4858: __asm("PWM3DCH equ 0315h");
+[; <" PWM3DCH equ 0315h ;# ">
+"5028
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 5028: __asm("PWM3CON equ 0316h");
+[; <" PWM3CON equ 0316h ;# ">
+"5084
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 5084: __asm("PWM4DC equ 0318h");
+[; <" PWM4DC equ 0318h ;# ">
+"5091
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 5091: __asm("PWM4DCL equ 0318h");
+[; <" PWM4DCL equ 0318h ;# ">
+"5157
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 5157: __asm("PWM4DCH equ 0319h");
+[; <" PWM4DCH equ 0319h ;# ">
+"5327
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 5327: __asm("PWM4CON equ 031Ah");
+[; <" PWM4CON equ 031Ah ;# ">
+"5383
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 5383: __asm("PWM5DC equ 031Ch");
+[; <" PWM5DC equ 031Ch ;# ">
+"5390
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 5390: __asm("PWM5DCL equ 031Ch");
+[; <" PWM5DCL equ 031Ch ;# ">
+"5456
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 5456: __asm("PWM5DCH equ 031Dh");
+[; <" PWM5DCH equ 031Dh ;# ">
+"5626
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 5626: __asm("PWM5CON equ 031Eh");
+[; <" PWM5CON equ 031Eh ;# ">
+"5682
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 5682: __asm("PWM6DC equ 038Ch");
+[; <" PWM6DC equ 038Ch ;# ">
+"5689
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 5689: __asm("PWM6DCL equ 038Ch");
+[; <" PWM6DCL equ 038Ch ;# ">
+"5755
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 5755: __asm("PWM6DCH equ 038Dh");
+[; <" PWM6DCH equ 038Dh ;# ">
+"5925
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 5925: __asm("PWM6CON equ 038Eh");
+[; <" PWM6CON equ 038Eh ;# ">
+"5983
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 5983: __asm("NCO1ACC equ 058Ch");
+[; <" NCO1ACC equ 058Ch ;# ">
+"5990
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 5990: __asm("NCO1ACCL equ 058Ch");
+[; <" NCO1ACCL equ 058Ch ;# ">
+"6060
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 6060: __asm("NCO1ACCH equ 058Dh");
+[; <" NCO1ACCH equ 058Dh ;# ">
+"6130
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 6130: __asm("NCO1ACCU equ 058Eh");
+[; <" NCO1ACCU equ 058Eh ;# ">
+"6178
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 6178: __asm("NCO1INC equ 058Fh");
+[; <" NCO1INC equ 058Fh ;# ">
+"6185
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 6185: __asm("NCO1INCL equ 058Fh");
+[; <" NCO1INCL equ 058Fh ;# ">
+"6255
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 6255: __asm("NCO1INCH equ 0590h");
+[; <" NCO1INCH equ 0590h ;# ">
+"6325
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 6325: __asm("NCO1INCU equ 0591h");
+[; <" NCO1INCU equ 0591h ;# ">
+"6371
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 6371: __asm("NCO1CON equ 0592h");
+[; <" NCO1CON equ 0592h ;# ">
+"6411
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 6411: __asm("NCO1CLK equ 0593h");
+[; <" NCO1CLK equ 0593h ;# ">
+"6483
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 6483: __asm("TMR0L equ 059Ch");
+[; <" TMR0L equ 059Ch ;# ">
+"6488
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 6488: __asm("TMR0 equ 059Ch");
+[; <" TMR0 equ 059Ch ;# ">
+"6621
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 6621: __asm("TMR0H equ 059Dh");
+[; <" TMR0H equ 059Dh ;# ">
+"6626
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 6626: __asm("PR0 equ 059Dh");
+[; <" PR0 equ 059Dh ;# ">
+"6875
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 6875: __asm("T0CON0 equ 059Eh");
+[; <" T0CON0 equ 059Eh ;# ">
+"6940
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 6940: __asm("T0CON1 equ 059Fh");
+[; <" T0CON1 equ 059Fh ;# ">
+"7051
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 7051: __asm("CWG1CLKCON equ 060Ch");
+[; <" CWG1CLKCON equ 060Ch ;# ">
+"7079
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 7079: __asm("CWG1DAT equ 060Dh");
+[; <" CWG1DAT equ 060Dh ;# ">
+"7125
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 7125: __asm("CWG1DBR equ 060Eh");
+[; <" CWG1DBR equ 060Eh ;# ">
+"7229
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 7229: __asm("CWG1DBF equ 060Fh");
+[; <" CWG1DBF equ 060Fh ;# ">
+"7333
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 7333: __asm("CWG1CON0 equ 0610h");
+[; <" CWG1CON0 equ 0610h ;# ">
+"7434
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 7434: __asm("CWG1CON1 equ 0611h");
+[; <" CWG1CON1 equ 0611h ;# ">
+"7512
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 7512: __asm("CWG1AS0 equ 0612h");
+[; <" CWG1AS0 equ 0612h ;# ">
+"7632
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 7632: __asm("CWG1AS1 equ 0613h");
+[; <" CWG1AS1 equ 0613h ;# ">
+"7676
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 7676: __asm("CWG1STR equ 0614h");
+[; <" CWG1STR equ 0614h ;# ">
+"7788
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 7788: __asm("PIR0 equ 070Ch");
+[; <" PIR0 equ 070Ch ;# ">
+"7821
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 7821: __asm("PIR1 equ 070Dh");
+[; <" PIR1 equ 070Dh ;# ">
+"7860
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 7860: __asm("PIR2 equ 070Eh");
+[; <" PIR2 equ 070Eh ;# ">
+"7893
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 7893: __asm("PIR3 equ 070Fh");
+[; <" PIR3 equ 070Fh ;# ">
+"7944
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 7944: __asm("PIR4 equ 0710h");
+[; <" PIR4 equ 0710h ;# ">
+"7970
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 7970: __asm("PIR5 equ 0711h");
+[; <" PIR5 equ 0711h ;# ">
+"8015
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8015: __asm("PIR6 equ 0712h");
+[; <" PIR6 equ 0712h ;# ">
+"8041
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8041: __asm("PIR7 equ 0713h");
+[; <" PIR7 equ 0713h ;# ">
+"8083
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8083: __asm("PIE0 equ 0716h");
+[; <" PIE0 equ 0716h ;# ">
+"8116
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8116: __asm("PIE1 equ 0717h");
+[; <" PIE1 equ 0717h ;# ">
+"8149
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8149: __asm("PIE2 equ 0718h");
+[; <" PIE2 equ 0718h ;# ">
+"8182
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8182: __asm("PIE3 equ 0719h");
+[; <" PIE3 equ 0719h ;# ">
+"8233
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8233: __asm("PIE4 equ 071Ah");
+[; <" PIE4 equ 071Ah ;# ">
+"8259
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8259: __asm("PIE5 equ 071Bh");
+[; <" PIE5 equ 071Bh ;# ">
+"8304
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8304: __asm("PIE6 equ 071Ch");
+[; <" PIE6 equ 071Ch ;# ">
+"8330
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8330: __asm("PIE7 equ 071Dh");
+[; <" PIE7 equ 071Dh ;# ">
+"8372
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8372: __asm("PMD0 equ 0796h");
+[; <" PMD0 equ 0796h ;# ">
+"8417
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8417: __asm("PMD1 equ 0797h");
+[; <" PMD1 equ 0797h ;# ">
+"8465
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8465: __asm("PMD2 equ 0798h");
+[; <" PMD2 equ 0798h ;# ">
+"8510
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8510: __asm("PMD3 equ 0799h");
+[; <" PMD3 equ 0799h ;# ">
+"8560
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8560: __asm("PMD4 equ 079Ah");
+[; <" PMD4 equ 079Ah ;# ">
+"8600
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8600: __asm("PMD5 equ 079Bh");
+[; <" PMD5 equ 079Bh ;# ">
+"8639
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8639: __asm("WDTCON0 equ 080Ch");
+[; <" WDTCON0 equ 080Ch ;# ">
+"8714
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8714: __asm("WDTCON1 equ 080Dh");
+[; <" WDTCON1 equ 080Dh ;# ">
+"8808
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8808: __asm("WDTPSL equ 080Eh");
+[; <" WDTPSL equ 080Eh ;# ">
+"8936
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 8936: __asm("WDTPSH equ 080Fh");
+[; <" WDTPSH equ 080Fh ;# ">
+"9064
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9064: __asm("WDTTMR equ 0810h");
+[; <" WDTTMR equ 0810h ;# ">
+"9152
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9152: __asm("BORCON equ 0811h");
+[; <" BORCON equ 0811h ;# ">
+"9179
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9179: __asm("VREGCON equ 0812h");
+[; <" VREGCON equ 0812h ;# ">
+"9200
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9200: __asm("PCON0 equ 0813h");
+[; <" PCON0 equ 0813h ;# ">
+"9262
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9262: __asm("PCON1 equ 0814h");
+[; <" PCON1 equ 0814h ;# ">
+"9283
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9283: __asm("NVMADR equ 081Ah");
+[; <" NVMADR equ 081Ah ;# ">
+"9290
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9290: __asm("NVMADRL equ 081Ah");
+[; <" NVMADRL equ 081Ah ;# ">
+"9352
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9352: __asm("NVMADRH equ 081Bh");
+[; <" NVMADRH equ 081Bh ;# ">
+"9408
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9408: __asm("NVMDAT equ 081Ch");
+[; <" NVMDAT equ 081Ch ;# ">
+"9415
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9415: __asm("NVMDATL equ 081Ch");
+[; <" NVMDATL equ 081Ch ;# ">
+"9477
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9477: __asm("NVMDATH equ 081Dh");
+[; <" NVMDATH equ 081Dh ;# ">
+"9527
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9527: __asm("NVMCON1 equ 081Eh");
+[; <" NVMCON1 equ 081Eh ;# ">
+"9583
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9583: __asm("NVMCON2 equ 081Fh");
+[; <" NVMCON2 equ 081Fh ;# ">
+"9603
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9603: __asm("CPUDOZE equ 088Ch");
+[; <" CPUDOZE equ 088Ch ;# ">
+"9668
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9668: __asm("OSCCON1 equ 088Dh");
+[; <" OSCCON1 equ 088Dh ;# ">
+"9738
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9738: __asm("OSCCON2 equ 088Eh");
+[; <" OSCCON2 equ 088Eh ;# ">
+"9808
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9808: __asm("OSCCON3 equ 088Fh");
+[; <" OSCCON3 equ 088Fh ;# ">
+"9848
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9848: __asm("OSCSTAT equ 0890h");
+[; <" OSCSTAT equ 0890h ;# ">
+"9905
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9905: __asm("OSCEN equ 0891h");
+[; <" OSCEN equ 0891h ;# ">
+"9956
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 9956: __asm("OSCTUNE equ 0892h");
+[; <" OSCTUNE equ 0892h ;# ">
+"10014
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 10014: __asm("OSCFRQ equ 0893h");
+[; <" OSCFRQ equ 0893h ;# ">
+"10054
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 10054: __asm("CLKRCON equ 0895h");
+[; <" CLKRCON equ 0895h ;# ">
+"10119
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 10119: __asm("CLKRCLK equ 0896h");
+[; <" CLKRCLK equ 0896h ;# ">
+"10165
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 10165: __asm("FVRCON equ 090Ch");
+[; <" FVRCON equ 090Ch ;# ">
+"10241
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 10241: __asm("DAC1CON0 equ 090Eh");
+[; <" DAC1CON0 equ 090Eh ;# ">
+"10342
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 10342: __asm("DAC1CON1 equ 090Fh");
+[; <" DAC1CON1 equ 090Fh ;# ">
+"10394
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 10394: __asm("ZCDCON equ 091Fh");
+[; <" ZCDCON equ 091Fh ;# ">
+"10440
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 10440: __asm("CMOUT equ 098Fh");
+[; <" CMOUT equ 098Fh ;# ">
+"10445
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 10445: __asm("CMSTAT equ 098Fh");
+[; <" CMSTAT equ 098Fh ;# ">
+"10518
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 10518: __asm("CM1CON0 equ 0990h");
+[; <" CM1CON0 equ 0990h ;# ">
+"10598
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 10598: __asm("CM1CON1 equ 0991h");
+[; <" CM1CON1 equ 0991h ;# ">
+"10638
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 10638: __asm("CM1NCH equ 0992h");
+[; <" CM1NCH equ 0992h ;# ">
+"10698
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 10698: __asm("CM1PCH equ 0993h");
+[; <" CM1PCH equ 0993h ;# ">
+"10758
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 10758: __asm("CM2CON0 equ 0994h");
+[; <" CM2CON0 equ 0994h ;# ">
+"10838
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 10838: __asm("CM2CON1 equ 0995h");
+[; <" CM2CON1 equ 0995h ;# ">
+"10878
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 10878: __asm("CM2NCH equ 0996h");
+[; <" CM2NCH equ 0996h ;# ">
+"10938
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 10938: __asm("CM2PCH equ 0997h");
+[; <" CM2PCH equ 0997h ;# ">
+"10998
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 10998: __asm("RC2REG equ 0A19h");
+[; <" RC2REG equ 0A19h ;# ">
+"11003
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11003: __asm("RCREG2 equ 0A19h");
+[; <" RCREG2 equ 0A19h ;# ">
+"11036
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11036: __asm("TX2REG equ 0A1Ah");
+[; <" TX2REG equ 0A1Ah ;# ">
+"11041
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11041: __asm("TXREG2 equ 0A1Ah");
+[; <" TXREG2 equ 0A1Ah ;# ">
+"11074
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11074: __asm("SP2BRG equ 0A1Bh");
+[; <" SP2BRG equ 0A1Bh ;# ">
+"11081
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11081: __asm("SP2BRGL equ 0A1Bh");
+[; <" SP2BRGL equ 0A1Bh ;# ">
+"11086
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11086: __asm("SPBRG2 equ 0A1Bh");
+[; <" SPBRG2 equ 0A1Bh ;# ">
+"11119
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11119: __asm("SP2BRGH equ 0A1Ch");
+[; <" SP2BRGH equ 0A1Ch ;# ">
+"11124
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11124: __asm("SPBRGH2 equ 0A1Ch");
+[; <" SPBRGH2 equ 0A1Ch ;# ">
+"11157
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11157: __asm("RC2STA equ 0A1Dh");
+[; <" RC2STA equ 0A1Dh ;# ">
+"11162
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11162: __asm("RCSTA2 equ 0A1Dh");
+[; <" RCSTA2 equ 0A1Dh ;# ">
+"11279
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11279: __asm("TX2STA equ 0A1Eh");
+[; <" TX2STA equ 0A1Eh ;# ">
+"11284
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11284: __asm("TXSTA2 equ 0A1Eh");
+[; <" TXSTA2 equ 0A1Eh ;# ">
+"11401
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11401: __asm("BAUD2CON equ 0A1Fh");
+[; <" BAUD2CON equ 0A1Fh ;# ">
+"11406
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11406: __asm("BAUDCON2 equ 0A1Fh");
+[; <" BAUDCON2 equ 0A1Fh ;# ">
+"11410
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11410: __asm("BAUDCTL2 equ 0A1Fh");
+[; <" BAUDCTL2 equ 0A1Fh ;# ">
+"11551
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11551: __asm("CLCDATA equ 01E0Fh");
+[; <" CLCDATA equ 01E0Fh ;# ">
+"11589
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11589: __asm("CLC1CON equ 01E10h");
+[; <" CLC1CON equ 01E10h ;# ">
+"11707
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11707: __asm("CLC1POL equ 01E11h");
+[; <" CLC1POL equ 01E11h ;# ">
+"11785
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11785: __asm("CLC1SEL0 equ 01E12h");
+[; <" CLC1SEL0 equ 01E12h ;# ">
+"11889
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11889: __asm("CLC1SEL1 equ 01E13h");
+[; <" CLC1SEL1 equ 01E13h ;# ">
+"11993
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 11993: __asm("CLC1SEL2 equ 01E14h");
+[; <" CLC1SEL2 equ 01E14h ;# ">
+"12097
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 12097: __asm("CLC1SEL3 equ 01E15h");
+[; <" CLC1SEL3 equ 01E15h ;# ">
+"12201
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 12201: __asm("CLC1GLS0 equ 01E16h");
+[; <" CLC1GLS0 equ 01E16h ;# ">
+"12313
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 12313: __asm("CLC1GLS1 equ 01E17h");
+[; <" CLC1GLS1 equ 01E17h ;# ">
+"12425
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 12425: __asm("CLC1GLS2 equ 01E18h");
+[; <" CLC1GLS2 equ 01E18h ;# ">
+"12537
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 12537: __asm("CLC1GLS3 equ 01E19h");
+[; <" CLC1GLS3 equ 01E19h ;# ">
+"12649
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 12649: __asm("CLC2CON equ 01E1Ah");
+[; <" CLC2CON equ 01E1Ah ;# ">
+"12767
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 12767: __asm("CLC2POL equ 01E1Bh");
+[; <" CLC2POL equ 01E1Bh ;# ">
+"12845
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 12845: __asm("CLC2SEL0 equ 01E1Ch");
+[; <" CLC2SEL0 equ 01E1Ch ;# ">
+"12949
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 12949: __asm("CLC2SEL1 equ 01E1Dh");
+[; <" CLC2SEL1 equ 01E1Dh ;# ">
+"13053
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 13053: __asm("CLC2SEL2 equ 01E1Eh");
+[; <" CLC2SEL2 equ 01E1Eh ;# ">
+"13157
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 13157: __asm("CLC2SEL3 equ 01E1Fh");
+[; <" CLC2SEL3 equ 01E1Fh ;# ">
+"13261
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 13261: __asm("CLC2GLS0 equ 01E20h");
+[; <" CLC2GLS0 equ 01E20h ;# ">
+"13373
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 13373: __asm("CLC2GLS1 equ 01E21h");
+[; <" CLC2GLS1 equ 01E21h ;# ">
+"13485
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 13485: __asm("CLC2GLS2 equ 01E22h");
+[; <" CLC2GLS2 equ 01E22h ;# ">
+"13597
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 13597: __asm("CLC2GLS3 equ 01E23h");
+[; <" CLC2GLS3 equ 01E23h ;# ">
+"13709
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 13709: __asm("CLC3CON equ 01E24h");
+[; <" CLC3CON equ 01E24h ;# ">
+"13827
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 13827: __asm("CLC3POL equ 01E25h");
+[; <" CLC3POL equ 01E25h ;# ">
+"13905
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 13905: __asm("CLC3SEL0 equ 01E26h");
+[; <" CLC3SEL0 equ 01E26h ;# ">
+"14009
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 14009: __asm("CLC3SEL1 equ 01E27h");
+[; <" CLC3SEL1 equ 01E27h ;# ">
+"14113
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 14113: __asm("CLC3SEL2 equ 01E28h");
+[; <" CLC3SEL2 equ 01E28h ;# ">
+"14217
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 14217: __asm("CLC3SEL3 equ 01E29h");
+[; <" CLC3SEL3 equ 01E29h ;# ">
+"14321
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 14321: __asm("CLC3GLS0 equ 01E2Ah");
+[; <" CLC3GLS0 equ 01E2Ah ;# ">
+"14433
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 14433: __asm("CLC3GLS1 equ 01E2Bh");
+[; <" CLC3GLS1 equ 01E2Bh ;# ">
+"14545
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 14545: __asm("CLC3GLS2 equ 01E2Ch");
+[; <" CLC3GLS2 equ 01E2Ch ;# ">
+"14657
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 14657: __asm("CLC3GLS3 equ 01E2Dh");
+[; <" CLC3GLS3 equ 01E2Dh ;# ">
+"14769
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 14769: __asm("CLC4CON equ 01E2Eh");
+[; <" CLC4CON equ 01E2Eh ;# ">
+"14887
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 14887: __asm("CLC4POL equ 01E2Fh");
+[; <" CLC4POL equ 01E2Fh ;# ">
+"14965
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 14965: __asm("CLC4SEL0 equ 01E30h");
+[; <" CLC4SEL0 equ 01E30h ;# ">
+"15069
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 15069: __asm("CLC4SEL1 equ 01E31h");
+[; <" CLC4SEL1 equ 01E31h ;# ">
+"15173
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 15173: __asm("CLC4SEL2 equ 01E32h");
+[; <" CLC4SEL2 equ 01E32h ;# ">
+"15277
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 15277: __asm("CLC4SEL3 equ 01E33h");
+[; <" CLC4SEL3 equ 01E33h ;# ">
+"15381
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 15381: __asm("CLC4GLS0 equ 01E34h");
+[; <" CLC4GLS0 equ 01E34h ;# ">
+"15493
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 15493: __asm("CLC4GLS1 equ 01E35h");
+[; <" CLC4GLS1 equ 01E35h ;# ">
+"15605
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 15605: __asm("CLC4GLS2 equ 01E36h");
+[; <" CLC4GLS2 equ 01E36h ;# ">
+"15717
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 15717: __asm("CLC4GLS3 equ 01E37h");
+[; <" CLC4GLS3 equ 01E37h ;# ">
+"15829
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 15829: __asm("PPSLOCK equ 01E8Fh");
+[; <" PPSLOCK equ 01E8Fh ;# ">
+"15849
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 15849: __asm("INTPPS equ 01E90h");
+[; <" INTPPS equ 01E90h ;# ">
+"15907
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 15907: __asm("T0CKIPPS equ 01E91h");
+[; <" T0CKIPPS equ 01E91h ;# ">
+"15965
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 15965: __asm("T1CKIPPS equ 01E92h");
+[; <" T1CKIPPS equ 01E92h ;# ">
+"16023
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 16023: __asm("T1GPPS equ 01E93h");
+[; <" T1GPPS equ 01E93h ;# ">
+"16081
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 16081: __asm("T2INPPS equ 01E9Ch");
+[; <" T2INPPS equ 01E9Ch ;# ">
+"16139
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 16139: __asm("CCP1PPS equ 01EA1h");
+[; <" CCP1PPS equ 01EA1h ;# ">
+"16197
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 16197: __asm("CCP2PPS equ 01EA2h");
+[; <" CCP2PPS equ 01EA2h ;# ">
+"16255
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 16255: __asm("CWG1PPS equ 01EB1h");
+[; <" CWG1PPS equ 01EB1h ;# ">
+"16313
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 16313: __asm("CLCIN0PPS equ 01EBBh");
+[; <" CLCIN0PPS equ 01EBBh ;# ">
+"16371
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 16371: __asm("CLCIN1PPS equ 01EBCh");
+[; <" CLCIN1PPS equ 01EBCh ;# ">
+"16429
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 16429: __asm("CLCIN2PPS equ 01EBDh");
+[; <" CLCIN2PPS equ 01EBDh ;# ">
+"16487
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 16487: __asm("CLCIN3PPS equ 01EBEh");
+[; <" CLCIN3PPS equ 01EBEh ;# ">
+"16545
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 16545: __asm("ADACTPPS equ 01EC3h");
+[; <" ADACTPPS equ 01EC3h ;# ">
+"16603
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 16603: __asm("SSP1CLKPPS equ 01EC5h");
+[; <" SSP1CLKPPS equ 01EC5h ;# ">
+"16661
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 16661: __asm("SSP1DATPPS equ 01EC6h");
+[; <" SSP1DATPPS equ 01EC6h ;# ">
+"16719
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 16719: __asm("SSP1SSPPS equ 01EC7h");
+[; <" SSP1SSPPS equ 01EC7h ;# ">
+"16777
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 16777: __asm("RX1DTPPS equ 01ECBh");
+[; <" RX1DTPPS equ 01ECBh ;# ">
+"16835
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 16835: __asm("TX1CKPPS equ 01ECCh");
+[; <" TX1CKPPS equ 01ECCh ;# ">
+"16893
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 16893: __asm("RX2DTPPS equ 01ECDh");
+[; <" RX2DTPPS equ 01ECDh ;# ">
+"16951
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 16951: __asm("TX2CKPPS equ 01ECEh");
+[; <" TX2CKPPS equ 01ECEh ;# ">
+"17009
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17009: __asm("RA0PPS equ 01F10h");
+[; <" RA0PPS equ 01F10h ;# ">
+"17053
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17053: __asm("RA1PPS equ 01F11h");
+[; <" RA1PPS equ 01F11h ;# ">
+"17097
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17097: __asm("RA2PPS equ 01F12h");
+[; <" RA2PPS equ 01F12h ;# ">
+"17141
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17141: __asm("RA3PPS equ 01F13h");
+[; <" RA3PPS equ 01F13h ;# ">
+"17185
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17185: __asm("RA4PPS equ 01F14h");
+[; <" RA4PPS equ 01F14h ;# ">
+"17229
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17229: __asm("RA5PPS equ 01F15h");
+[; <" RA5PPS equ 01F15h ;# ">
+"17273
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17273: __asm("RC0PPS equ 01F20h");
+[; <" RC0PPS equ 01F20h ;# ">
+"17317
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17317: __asm("RC1PPS equ 01F21h");
+[; <" RC1PPS equ 01F21h ;# ">
+"17361
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17361: __asm("RC2PPS equ 01F22h");
+[; <" RC2PPS equ 01F22h ;# ">
+"17405
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17405: __asm("RC3PPS equ 01F23h");
+[; <" RC3PPS equ 01F23h ;# ">
+"17449
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17449: __asm("RC4PPS equ 01F24h");
+[; <" RC4PPS equ 01F24h ;# ">
+"17493
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17493: __asm("RC5PPS equ 01F25h");
+[; <" RC5PPS equ 01F25h ;# ">
+"17537
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17537: __asm("ANSELA equ 01F38h");
+[; <" ANSELA equ 01F38h ;# ">
+"17582
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17582: __asm("WPUA equ 01F39h");
+[; <" WPUA equ 01F39h ;# ">
+"17632
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17632: __asm("ODCONA equ 01F3Ah");
+[; <" ODCONA equ 01F3Ah ;# ">
+"17677
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17677: __asm("SLRCONA equ 01F3Bh");
+[; <" SLRCONA equ 01F3Bh ;# ">
+"17722
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17722: __asm("INLVLA equ 01F3Ch");
+[; <" INLVLA equ 01F3Ch ;# ">
+"17772
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17772: __asm("IOCAP equ 01F3Dh");
+[; <" IOCAP equ 01F3Dh ;# ">
+"17822
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17822: __asm("IOCAN equ 01F3Eh");
+[; <" IOCAN equ 01F3Eh ;# ">
+"17872
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17872: __asm("IOCAF equ 01F3Fh");
+[; <" IOCAF equ 01F3Fh ;# ">
+"17922
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17922: __asm("ANSELC equ 01F4Eh");
+[; <" ANSELC equ 01F4Eh ;# ">
+"17972
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 17972: __asm("WPUC equ 01F4Fh");
+[; <" WPUC equ 01F4Fh ;# ">
+"18022
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 18022: __asm("ODCONC equ 01F50h");
+[; <" ODCONC equ 01F50h ;# ">
+"18072
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 18072: __asm("SLRCONC equ 01F51h");
+[; <" SLRCONC equ 01F51h ;# ">
+"18122
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 18122: __asm("INLVLC equ 01F52h");
+[; <" INLVLC equ 01F52h ;# ">
+"18172
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 18172: __asm("IOCCP equ 01F53h");
+[; <" IOCCP equ 01F53h ;# ">
+"18222
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 18222: __asm("IOCCN equ 01F54h");
+[; <" IOCCN equ 01F54h ;# ">
+"18272
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 18272: __asm("IOCCF equ 01F55h");
+[; <" IOCCF equ 01F55h ;# ">
+"18322
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 18322: __asm("STATUS_SHAD equ 01FE4h");
+[; <" STATUS_SHAD equ 01FE4h ;# ">
+"18362
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 18362: __asm("WREG_SHAD equ 01FE5h");
+[; <" WREG_SHAD equ 01FE5h ;# ">
+"18382
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 18382: __asm("BSR_SHAD equ 01FE6h");
+[; <" BSR_SHAD equ 01FE6h ;# ">
+"18402
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 18402: __asm("PCLATH_SHAD equ 01FE7h");
+[; <" PCLATH_SHAD equ 01FE7h ;# ">
+"18422
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 18422: __asm("FSR0_SHAD equ 01FE8h");
+[; <" FSR0_SHAD equ 01FE8h ;# ">
+"18429
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 18429: __asm("FSR0L_SHAD equ 01FE8h");
+[; <" FSR0L_SHAD equ 01FE8h ;# ">
+"18449
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 18449: __asm("FSR0H_SHAD equ 01FE9h");
+[; <" FSR0H_SHAD equ 01FE9h ;# ">
+"18469
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 18469: __asm("FSR1_SHAD equ 01FEAh");
+[; <" FSR1_SHAD equ 01FEAh ;# ">
+"18476
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 18476: __asm("FSR1L_SHAD equ 01FEAh");
+[; <" FSR1L_SHAD equ 01FEAh ;# ">
+"18496
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 18496: __asm("FSR1H_SHAD equ 01FEBh");
+[; <" FSR1H_SHAD equ 01FEBh ;# ">
+"18516
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 18516: __asm("STKPTR equ 01FEDh");
+[; <" STKPTR equ 01FEDh ;# ">
+"18560
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 18560: __asm("TOSL equ 01FEEh");
+[; <" TOSL equ 01FEEh ;# ">
+"18630
+[; ;/opt/microchip/xc8/v2.00/pic/include/pic16f15325.h: 18630: __asm("TOSH equ 01FEFh");
+[; <" TOSH equ 01FEFh ;# ">
+"77 mcc_generated_files/drivers/../i2c1_driver.h
+[; ;mcc_generated_files/drivers/../i2c1_driver.h: 77: void (*i2c1_driver_busCollisionISR)(void);
+[v _i2c1_driver_busCollisionISR `*F6815 ~T0 @X0 1 e ]
+"78
+[; ;mcc_generated_files/drivers/../i2c1_driver.h: 78: void (*i2c1_driver_i2cISR)(void);
+[v _i2c1_driver_i2cISR `*F6817 ~T0 @X0 1 e ]
+"76 mcc_generated_files/drivers/i2c_slave.h
+[; ;mcc_generated_files/drivers/i2c_slave.h: 76: void (*i2c_slave_RdInterruptHandler)(void);
+[v _i2c_slave_RdInterruptHandler `*F6861 ~T0 @X0 1 e ]
+"77
+[; ;mcc_generated_files/drivers/i2c_slave.h: 77: void (*i2c_slave_WrInterruptHandler)(void);
+[v _i2c_slave_WrInterruptHandler `*F6863 ~T0 @X0 1 e ]
+"78
+[; ;mcc_generated_files/drivers/i2c_slave.h: 78: void (*i2c_slave_AddrInterruptHandler)(void);
+[v _i2c_slave_AddrInterruptHandler `*F6865 ~T0 @X0 1 e ]
+"79
+[; ;mcc_generated_files/drivers/i2c_slave.h: 79: void (*i2c_slave_WCOLInterruptHandler)(void);
+[v _i2c_slave_WCOLInterruptHandler `*F6867 ~T0 @X0 1 e ]
+"85
+[; ;mcc_generated_files/drivers/i2c_slave.h: 85: volatile uint8_t i2c_slave_writeData;
+[v _i2c_slave_writeData `Vuc ~T0 @X0 1 e ]
+"36 mcc_generated_files/drivers/i2c_slave.c
+[; ;mcc_generated_files/drivers/i2c_slave.c: 36: volatile i2c_state_t state = Address;
+[v _state `VE6869 ~T0 @X0 1 e ]
+[i _state
+. `E6869 0
+]
+"37
+[; ;mcc_generated_files/drivers/i2c_slave.c: 37: volatile i2c_state_t nextState = Address;
+[v _nextState `VE6869 ~T0 @X0 1 e ]
+[i _nextState
+. `E6869 0
+]
+"38
+[; ;mcc_generated_files/drivers/i2c_slave.c: 38: volatile uint8_t i2c1Data;
+[v _i2c1Data `Vuc ~T0 @X0 1 e ]
+"39
+[; ;mcc_generated_files/drivers/i2c_slave.c: 39: volatile uint8_t sAddr;
+[v _sAddr `Vuc ~T0 @X0 1 e ]
+"45
+[; ;mcc_generated_files/drivers/i2c_slave.c: 45: void i2c_slave_open(void) {
+[v _i2c_slave_open `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_slave_open ]
+[f ]
+"47
+[; ;mcc_generated_files/drivers/i2c_slave.c: 47:     i2c_slave_setIsrHandler(i2c_slave_ISR);
+[e ( _i2c_slave_setIsrHandler (1 &U _i2c_slave_ISR ]
+"48
+[; ;mcc_generated_files/drivers/i2c_slave.c: 48:     i2c1_driver_initSlaveHardware();
+[e ( _i2c1_driver_initSlaveHardware ..  ]
+"49
+[; ;mcc_generated_files/drivers/i2c_slave.c: 49:     i2c1_driver_setAddr(0 << 1);
+[e ( _i2c1_driver_setAddr (1 -> << -> 0 `i -> 1 `i `uc ]
+"50
+[; ;mcc_generated_files/drivers/i2c_slave.c: 50:     i2c1_driver_setMask(255);
+[e ( _i2c1_driver_setMask (1 -> -> 255 `i `uc ]
+"51
+[; ;mcc_generated_files/drivers/i2c_slave.c: 51:     i2c1_driver_setBusCollisionISR(i2c_slave_BusCollisionISR);
+[e ( _i2c1_driver_setBusCollisionISR (1 &U _i2c_slave_BusCollisionISR ]
+"52
+[; ;mcc_generated_files/drivers/i2c_slave.c: 52:     i2c_slave_setWriteIntHandler(i2c_slave_DefWrInterruptHandler);
+[e ( _i2c_slave_setWriteIntHandler (1 &U _i2c_slave_DefWrInterruptHandler ]
+"53
+[; ;mcc_generated_files/drivers/i2c_slave.c: 53:     i2c_slave_setReadIntHandler(i2c_slave_DefRdInterruptHandler);
+[e ( _i2c_slave_setReadIntHandler (1 &U _i2c_slave_DefRdInterruptHandler ]
+"54
+[; ;mcc_generated_files/drivers/i2c_slave.c: 54:     i2c_slave_setAddrIntHandler(i2c_slave_DefAddrInterruptHandler);
+[e ( _i2c_slave_setAddrIntHandler (1 &U _i2c_slave_DefAddrInterruptHandler ]
+"55
+[; ;mcc_generated_files/drivers/i2c_slave.c: 55:     i2c_slave_setWCOLIntHandler(i2c_slave_BusCollisionISR);
+[e ( _i2c_slave_setWCOLIntHandler (1 &U _i2c_slave_BusCollisionISR ]
+"56
+[; ;mcc_generated_files/drivers/i2c_slave.c: 56: }
+[e :UE 877 ]
+}
+"58
+[; ;mcc_generated_files/drivers/i2c_slave.c: 58: void i2c_slave_close(void) {
+[v _i2c_slave_close `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_slave_close ]
+[f ]
+"59
+[; ;mcc_generated_files/drivers/i2c_slave.c: 59:     i2c1_driver_close();
+[e ( _i2c1_driver_close ..  ]
+"60
+[; ;mcc_generated_files/drivers/i2c_slave.c: 60: }
+[e :UE 878 ]
+}
+"62
+[; ;mcc_generated_files/drivers/i2c_slave.c: 62: void i2c_slave_ISR(void) {
+[v _i2c_slave_ISR `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_slave_ISR ]
+[f ]
+"63
+[; ;mcc_generated_files/drivers/i2c_slave.c: 63:     mssp1_clearIRQ();
+[e ( _mssp1_clearIRQ ..  ]
+"66
+[; ;mcc_generated_files/drivers/i2c_slave.c: 66:     i2c1Data = i2c1_driver_getRXData();
+[e = _i2c1Data -> ( _i2c1_driver_getRXData ..  `uc ]
+"68
+[; ;mcc_generated_files/drivers/i2c_slave.c: 68:     if (0 == i2c1_driver_isRead())
+[e $ ! == -> 0 `i -> ( _i2c1_driver_isRead ..  `i 880  ]
+"69
+[; ;mcc_generated_files/drivers/i2c_slave.c: 69:     {
+{
+"70
+[; ;mcc_generated_files/drivers/i2c_slave.c: 70:         state = I2C_RX;
+[e = _state . `E6869 2 ]
+"72
+[; ;mcc_generated_files/drivers/i2c_slave.c: 72:     } else {
+}
+[e $U 881  ]
+[e :U 880 ]
+{
+"73
+[; ;mcc_generated_files/drivers/i2c_slave.c: 73:          state = I2C_TX;
+[e = _state . `E6869 1 ]
+"74
+[; ;mcc_generated_files/drivers/i2c_slave.c: 74:     }
+}
+[e :U 881 ]
+"76
+[; ;mcc_generated_files/drivers/i2c_slave.c: 76:     switch(state)
+[e $U 883  ]
+"77
+[; ;mcc_generated_files/drivers/i2c_slave.c: 77:     {
+{
+"78
+[; ;mcc_generated_files/drivers/i2c_slave.c: 78:         case I2C_TX:
+[e :U 884 ]
+"79
+[; ;mcc_generated_files/drivers/i2c_slave.c: 79:             if(0 == i2c1_driver_isWriteCollision())
+[e $ ! == -> 0 `i -> ( _i2c1_driver_isWriteCollision ..  `i 885  ]
+"80
+[; ;mcc_generated_files/drivers/i2c_slave.c: 80:                  i2c_slave_WrCallBack();
+[e ( _i2c_slave_WrCallBack ..  ]
+[e $U 886  ]
+"81
+[; ;mcc_generated_files/drivers/i2c_slave.c: 81:             else
+[e :U 885 ]
+"82
+[; ;mcc_generated_files/drivers/i2c_slave.c: 82:                 {
+{
+"83
+[; ;mcc_generated_files/drivers/i2c_slave.c: 83:                   i2c_slave_WCOLCallBack();
+[e ( _i2c_slave_WCOLCallBack ..  ]
+"84
+[; ;mcc_generated_files/drivers/i2c_slave.c: 84:                   i2c1_driver_restart();
+[e ( _i2c1_driver_restart ..  ]
+"85
+[; ;mcc_generated_files/drivers/i2c_slave.c: 85:                 }
+}
+[e :U 886 ]
+"86
+[; ;mcc_generated_files/drivers/i2c_slave.c: 86:             nextState = Address;
+[e = _nextState . `E6869 0 ]
+"87
+[; ;mcc_generated_files/drivers/i2c_slave.c: 87:             break;
+[e $U 882  ]
+"89
+[; ;mcc_generated_files/drivers/i2c_slave.c: 89:         case I2C_RX:
+[e :U 887 ]
+"90
+[; ;mcc_generated_files/drivers/i2c_slave.c: 90:             if (1 == i2c1_driver_isData())
+[e $ ! == -> 1 `i -> ( _i2c1_driver_isData ..  `i 888  ]
+"91
+[; ;mcc_generated_files/drivers/i2c_slave.c: 91:             {
+{
+"92
+[; ;mcc_generated_files/drivers/i2c_slave.c: 92:                 i2c_slave_RdCallBack();
+[e ( _i2c_slave_RdCallBack ..  ]
+"93
+[; ;mcc_generated_files/drivers/i2c_slave.c: 93:                 nextState = I2C_RX;
+[e = _nextState . `E6869 2 ]
+"94
+[; ;mcc_generated_files/drivers/i2c_slave.c: 94:             } else {
+}
+[e $U 889  ]
+[e :U 888 ]
+{
+"95
+[; ;mcc_generated_files/drivers/i2c_slave.c: 95:                 i2c_slave_AddrCallBack();
+[e ( _i2c_slave_AddrCallBack ..  ]
+"96
+[; ;mcc_generated_files/drivers/i2c_slave.c: 96:                 nextState = Address;
+[e = _nextState . `E6869 0 ]
+"97
+[; ;mcc_generated_files/drivers/i2c_slave.c: 97:             }
+}
+[e :U 889 ]
+"99
+[; ;mcc_generated_files/drivers/i2c_slave.c: 99:             break;
+[e $U 882  ]
+"100
+[; ;mcc_generated_files/drivers/i2c_slave.c: 100:         default:
+[e :U 890 ]
+"101
+[; ;mcc_generated_files/drivers/i2c_slave.c: 101:             break;
+[e $U 882  ]
+"102
+[; ;mcc_generated_files/drivers/i2c_slave.c: 102:     }
+}
+[e $U 882  ]
+[e :U 883 ]
+[e [\ -> _state `ui , $ -> . `E6869 1 `ui 884
+ , $ -> . `E6869 2 `ui 887
+ 890 ]
+[e :U 882 ]
+"104
+[; ;mcc_generated_files/drivers/i2c_slave.c: 104:     state = nextState;
+[e = _state _nextState ]
+"105
+[; ;mcc_generated_files/drivers/i2c_slave.c: 105:     i2c1_driver_releaseClock();
+[e ( _i2c1_driver_releaseClock ..  ]
+"106
+[; ;mcc_generated_files/drivers/i2c_slave.c: 106: }
+[e :UE 879 ]
+}
+"108
+[; ;mcc_generated_files/drivers/i2c_slave.c: 108: void i2c_slave_BusCollisionISR(void) {
+[v _i2c_slave_BusCollisionISR `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_slave_BusCollisionISR ]
+[f ]
+"110
+[; ;mcc_generated_files/drivers/i2c_slave.c: 110: }
+[e :UE 891 ]
+}
+"112
+[; ;mcc_generated_files/drivers/i2c_slave.c: 112: uint8_t i2c_slave_read(void) {
+[v _i2c_slave_read `(uc ~T0 @X0 1 ef ]
+{
+[e :U _i2c_slave_read ]
+[f ]
+"113
+[; ;mcc_generated_files/drivers/i2c_slave.c: 113:     return i2c1_driver_getRXData();
+[e ) -> ( _i2c1_driver_getRXData ..  `uc ]
+[e $UE 892  ]
+"114
+[; ;mcc_generated_files/drivers/i2c_slave.c: 114: }
+[e :UE 892 ]
+}
+"116
+[; ;mcc_generated_files/drivers/i2c_slave.c: 116: void i2c_slave_write(uint8_t data) {
+[v _i2c_slave_write `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _i2c_slave_write ]
+[v _data `uc ~T0 @X0 1 r1 ]
+[f ]
+"117
+[; ;mcc_generated_files/drivers/i2c_slave.c: 117:     i2c1_driver_TXData(data);
+[e ( _i2c1_driver_TXData (1 -> _data `uc ]
+"118
+[; ;mcc_generated_files/drivers/i2c_slave.c: 118: }
+[e :UE 893 ]
+}
+"120
+[; ;mcc_generated_files/drivers/i2c_slave.c: 120: void i2c_slave_enable(void) {
+[v _i2c_slave_enable `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_slave_enable ]
+[f ]
+"121
+[; ;mcc_generated_files/drivers/i2c_slave.c: 121:     i2c1_driver_initSlaveHardware();
+[e ( _i2c1_driver_initSlaveHardware ..  ]
+"122
+[; ;mcc_generated_files/drivers/i2c_slave.c: 122: }
+[e :UE 894 ]
+}
+"124
+[; ;mcc_generated_files/drivers/i2c_slave.c: 124: void i2c_slave_sendAck(void) {
+[v _i2c_slave_sendAck `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_slave_sendAck ]
+[f ]
+"125
+[; ;mcc_generated_files/drivers/i2c_slave.c: 125:     i2c1_driver_sendACK();
+[e ( _i2c1_driver_sendACK ..  ]
+"126
+[; ;mcc_generated_files/drivers/i2c_slave.c: 126: }
+[e :UE 895 ]
+}
+"128
+[; ;mcc_generated_files/drivers/i2c_slave.c: 128: void i2c_slave_sendNack(void) {
+[v _i2c_slave_sendNack `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_slave_sendNack ]
+[f ]
+"129
+[; ;mcc_generated_files/drivers/i2c_slave.c: 129:     i2c1_driver_sendNACK();
+[e ( _i2c1_driver_sendNACK ..  ]
+"130
+[; ;mcc_generated_files/drivers/i2c_slave.c: 130: }
+[e :UE 896 ]
+}
+"133
+[; ;mcc_generated_files/drivers/i2c_slave.c: 133: void i2c_slave_RdCallBack(void) {
+[v _i2c_slave_RdCallBack `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_slave_RdCallBack ]
+[f ]
+"135
+[; ;mcc_generated_files/drivers/i2c_slave.c: 135:     if (i2c_slave_RdInterruptHandler) {
+[e $ ! != _i2c_slave_RdInterruptHandler -> -> 0 `i `*F6895 898  ]
+{
+"136
+[; ;mcc_generated_files/drivers/i2c_slave.c: 136:         i2c_slave_RdInterruptHandler();
+[e ( *U _i2c_slave_RdInterruptHandler ..  ]
+"137
+[; ;mcc_generated_files/drivers/i2c_slave.c: 137:     }
+}
+[e :U 898 ]
+"138
+[; ;mcc_generated_files/drivers/i2c_slave.c: 138: }
+[e :UE 897 ]
+}
+"140
+[; ;mcc_generated_files/drivers/i2c_slave.c: 140: void i2c_slave_setIsrHandler(interruptHandler handler) {
+[v _i2c_slave_setIsrHandler `(v ~T0 @X0 1 ef1`*F6897 ]
+{
+[e :U _i2c_slave_setIsrHandler ]
+[v _handler `*F6899 ~T0 @X0 1 r1 ]
+[f ]
+"141
+[; ;mcc_generated_files/drivers/i2c_slave.c: 141:     i2c1_driver_setI2cISR(handler);
+[e ( _i2c1_driver_setI2cISR (1 _handler ]
+"142
+[; ;mcc_generated_files/drivers/i2c_slave.c: 142: }
+[e :UE 899 ]
+}
+"144
+[; ;mcc_generated_files/drivers/i2c_slave.c: 144: void i2c_slave_setBusCollisionISR(interruptHandler handler) {
+[v _i2c_slave_setBusCollisionISR `(v ~T0 @X0 1 ef1`*F6901 ]
+{
+[e :U _i2c_slave_setBusCollisionISR ]
+[v _handler `*F6903 ~T0 @X0 1 r1 ]
+[f ]
+"145
+[; ;mcc_generated_files/drivers/i2c_slave.c: 145:     i2c1_driver_setBusCollisionISR(handler);
+[e ( _i2c1_driver_setBusCollisionISR (1 _handler ]
+"146
+[; ;mcc_generated_files/drivers/i2c_slave.c: 146: }
+[e :UE 900 ]
+}
+"148
+[; ;mcc_generated_files/drivers/i2c_slave.c: 148: void i2c_slave_setReadIntHandler(interruptHandler handler) {
+[v _i2c_slave_setReadIntHandler `(v ~T0 @X0 1 ef1`*F6905 ]
+{
+[e :U _i2c_slave_setReadIntHandler ]
+[v _handler `*F6907 ~T0 @X0 1 r1 ]
+[f ]
+"149
+[; ;mcc_generated_files/drivers/i2c_slave.c: 149:     i2c_slave_RdInterruptHandler = handler;
+[e = _i2c_slave_RdInterruptHandler _handler ]
+"150
+[; ;mcc_generated_files/drivers/i2c_slave.c: 150: }
+[e :UE 901 ]
+}
+"152
+[; ;mcc_generated_files/drivers/i2c_slave.c: 152: void i2c_slave_DefRdInterruptHandler(void) {
+[v _i2c_slave_DefRdInterruptHandler `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_slave_DefRdInterruptHandler ]
+[f ]
+"153
+[; ;mcc_generated_files/drivers/i2c_slave.c: 153:     i2c1Data = i2c1_driver_getRXData();
+[e = _i2c1Data -> ( _i2c1_driver_getRXData ..  `uc ]
+"154
+[; ;mcc_generated_files/drivers/i2c_slave.c: 154: }
+[e :UE 902 ]
+}
+"157
+[; ;mcc_generated_files/drivers/i2c_slave.c: 157: void i2c_slave_WrCallBack(void) {
+[v _i2c_slave_WrCallBack `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_slave_WrCallBack ]
+[f ]
+"159
+[; ;mcc_generated_files/drivers/i2c_slave.c: 159:     if (i2c_slave_WrInterruptHandler) {
+[e $ ! != _i2c_slave_WrInterruptHandler -> -> 0 `i `*F6911 904  ]
+{
+"160
+[; ;mcc_generated_files/drivers/i2c_slave.c: 160:         i2c_slave_WrInterruptHandler();
+[e ( *U _i2c_slave_WrInterruptHandler ..  ]
+"161
+[; ;mcc_generated_files/drivers/i2c_slave.c: 161:     }
+}
+[e :U 904 ]
+"162
+[; ;mcc_generated_files/drivers/i2c_slave.c: 162: }
+[e :UE 903 ]
+}
+"164
+[; ;mcc_generated_files/drivers/i2c_slave.c: 164: void i2c_slave_setWriteIntHandler(interruptHandler handler) {
+[v _i2c_slave_setWriteIntHandler `(v ~T0 @X0 1 ef1`*F6913 ]
+{
+[e :U _i2c_slave_setWriteIntHandler ]
+[v _handler `*F6915 ~T0 @X0 1 r1 ]
+[f ]
+"165
+[; ;mcc_generated_files/drivers/i2c_slave.c: 165:     i2c_slave_WrInterruptHandler = handler;
+[e = _i2c_slave_WrInterruptHandler _handler ]
+"166
+[; ;mcc_generated_files/drivers/i2c_slave.c: 166: }
+[e :UE 905 ]
+}
+"168
+[; ;mcc_generated_files/drivers/i2c_slave.c: 168: void i2c_slave_DefWrInterruptHandler(void) {
+[v _i2c_slave_DefWrInterruptHandler `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_slave_DefWrInterruptHandler ]
+[f ]
+"169
+[; ;mcc_generated_files/drivers/i2c_slave.c: 169:     i2c1_driver_TXData(i2c_slave_writeData);
+[e ( _i2c1_driver_TXData (1 -> _i2c_slave_writeData `uc ]
+"170
+[; ;mcc_generated_files/drivers/i2c_slave.c: 170: }
+[e :UE 906 ]
+}
+"173
+[; ;mcc_generated_files/drivers/i2c_slave.c: 173: void i2c_slave_AddrCallBack(void) {
+[v _i2c_slave_AddrCallBack `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_slave_AddrCallBack ]
+[f ]
+"175
+[; ;mcc_generated_files/drivers/i2c_slave.c: 175:     if (i2c_slave_AddrInterruptHandler) {
+[e $ ! != _i2c_slave_AddrInterruptHandler -> -> 0 `i `*F6919 908  ]
+{
+"176
+[; ;mcc_generated_files/drivers/i2c_slave.c: 176:         i2c_slave_AddrInterruptHandler();
+[e ( *U _i2c_slave_AddrInterruptHandler ..  ]
+"177
+[; ;mcc_generated_files/drivers/i2c_slave.c: 177:     }
+}
+[e :U 908 ]
+"178
+[; ;mcc_generated_files/drivers/i2c_slave.c: 178: }
+[e :UE 907 ]
+}
+"180
+[; ;mcc_generated_files/drivers/i2c_slave.c: 180: void i2c_slave_setAddrIntHandler(interruptHandler handler) {
+[v _i2c_slave_setAddrIntHandler `(v ~T0 @X0 1 ef1`*F6921 ]
+{
+[e :U _i2c_slave_setAddrIntHandler ]
+[v _handler `*F6923 ~T0 @X0 1 r1 ]
+[f ]
+"181
+[; ;mcc_generated_files/drivers/i2c_slave.c: 181:     i2c_slave_AddrInterruptHandler = handler;
+[e = _i2c_slave_AddrInterruptHandler _handler ]
+"182
+[; ;mcc_generated_files/drivers/i2c_slave.c: 182: }
+[e :UE 909 ]
+}
+"184
+[; ;mcc_generated_files/drivers/i2c_slave.c: 184: void i2c_slave_DefAddrInterruptHandler(void) {
+[v _i2c_slave_DefAddrInterruptHandler `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_slave_DefAddrInterruptHandler ]
+[f ]
+"185
+[; ;mcc_generated_files/drivers/i2c_slave.c: 185:     sAddr = i2c1_driver_getAddr();
+[e = _sAddr -> ( _i2c1_driver_getAddr ..  `uc ]
+"186
+[; ;mcc_generated_files/drivers/i2c_slave.c: 186: }
+[e :UE 910 ]
+}
+"189
+[; ;mcc_generated_files/drivers/i2c_slave.c: 189: void i2c_slave_WCOLCallBack(void) {
+[v _i2c_slave_WCOLCallBack `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_slave_WCOLCallBack ]
+[f ]
+"191
+[; ;mcc_generated_files/drivers/i2c_slave.c: 191:     if ( i2c_slave_WCOLInterruptHandler) {
+[e $ ! != _i2c_slave_WCOLInterruptHandler -> -> 0 `i `*F6927 912  ]
+{
+"192
+[; ;mcc_generated_files/drivers/i2c_slave.c: 192:          i2c_slave_WCOLInterruptHandler();
+[e ( *U _i2c_slave_WCOLInterruptHandler ..  ]
+"193
+[; ;mcc_generated_files/drivers/i2c_slave.c: 193:     }
+}
+[e :U 912 ]
+"194
+[; ;mcc_generated_files/drivers/i2c_slave.c: 194: }
+[e :UE 911 ]
+}
+"196
+[; ;mcc_generated_files/drivers/i2c_slave.c: 196: void i2c_slave_setWCOLIntHandler(interruptHandler handler) {
+[v _i2c_slave_setWCOLIntHandler `(v ~T0 @X0 1 ef1`*F6929 ]
+{
+[e :U _i2c_slave_setWCOLIntHandler ]
+[v _handler `*F6931 ~T0 @X0 1 r1 ]
+[f ]
+"197
+[; ;mcc_generated_files/drivers/i2c_slave.c: 197:     i2c_slave_WCOLInterruptHandler = handler;
+[e = _i2c_slave_WCOLInterruptHandler _handler ]
+"198
+[; ;mcc_generated_files/drivers/i2c_slave.c: 198: }
+[e :UE 913 ]
+}
+"200
+[; ;mcc_generated_files/drivers/i2c_slave.c: 200: void i2c_slave_DefWCOLInterruptHandler(void) {
+[v _i2c_slave_DefWCOLInterruptHandler `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_slave_DefWCOLInterruptHandler ]
+[f ]
+"201
+[; ;mcc_generated_files/drivers/i2c_slave.c: 201: }
+[e :UE 914 ]
+}

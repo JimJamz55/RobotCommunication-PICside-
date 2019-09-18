@@ -1,0 +1,860 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F15325 ]
+[d frameptr 6 ]
+"36 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/drivers/i2c_slave.c
+[e E6869 . `uc
+Address 0
+I2C_TX 1
+I2C_RX 2
+]
+"88 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/tmr2.c
+[e E6416 . `uc
+TMR2_ROP_STARTS_TMRON 0
+TMR2_ROP_STARTS_TMRON_ERSHIGH 1
+TMR2_ROP_STARTS_TMRON_ERSLOW 2
+TMR2_ROP_RESETS_ERSBOTHEDGE 3
+TMR2_ROP_RESETS_ERSRISINGEDGE 4
+TMR2_ROP_RESETS_ERSFALLINGEDGE 5
+TMR2_ROP_RESETS_ERSLOW 6
+TMR2_ROP_RESETS_ERSHIGH 7
+TMR2_OS_STARTS_TMRON 8
+TMR2_OS_STARTS_ERSRISINGEDGE 9
+TMR2_OS_STARTS_ERSFALLINGEDGE 10
+TMR2_OS_STARTS_ERSBOTHEDGE 11
+TMR2_OS_STARTS_ERSFIRSTRISINGEDGE 12
+TMR2_OS_STARTS_ERSFIRSTFALLINGEDGE 13
+TMR2_OS_STARTS_ERSRISINGEDGEDETECT 14
+TMR2_OS_STARTS_ERSFALLINGEDGEDETECT 15
+TMR2_OS_STARTS_TMRON_ERSHIGH 22
+TMR2_OS_STARTS_TMRON_ERSLOW 23
+TMR2_MS_STARTS_TMRON_ERSRISINGEDGEDETECT 17
+TMR2_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT 18
+TMR2_MS_STARTS_TMRON_ERSBOTHEDGE 19
+]
+"94
+[e E6439 . `uc
+TMR2_T2INPPS 0
+TMR2_CCP1_OUT 1
+TMR2_CCP2_OUT 2
+TMR2_PWM3_OUT 3
+TMR2_PWM4_OUT 4
+TMR2_PWM5_OUT 5
+TMR2_PWM6_OUT 6
+TMR2_C1_OUT_SYNC 7
+TMR2_C2_OUT_SYNC 8
+TMR2_ZCD_OUTPUT 9
+TMR2_CLC1_OUT 10
+TMR2_CLC2_OUT 11
+TMR2_CLC3_OUT 12
+TMR2_CLC4_OUT 13
+]
+"43 /opt/microchip/xc8/v2.00/pic/sources/c99/common/fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"10 /opt/microchip/xc8/v2.00/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"8 /opt/microchip/xc8/v2.00/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"4 /opt/microchip/xc8/v2.00/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 /opt/microchip/xc8/v2.00/pic/sources/c99/common/xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"50 /home/james/MPLABXProjects/PWMandI2C.X/main.c
+[v _main main `(v  1 e 1 0 ]
+"45 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/drivers/i2c_slave.c
+[v _i2c_slave_open i2c_slave_open `(v  1 e 1 0 ]
+"62
+[v _i2c_slave_ISR i2c_slave_ISR `(v  1 e 1 0 ]
+"108
+[v _i2c_slave_BusCollisionISR i2c_slave_BusCollisionISR `(v  1 e 1 0 ]
+"112
+[v _i2c_slave_read i2c_slave_read `(uc  1 e 1 0 ]
+"133
+[v _i2c_slave_RdCallBack i2c_slave_RdCallBack `(v  1 e 1 0 ]
+"140
+[v _i2c_slave_setIsrHandler i2c_slave_setIsrHandler `(v  1 e 1 0 ]
+"148
+[v _i2c_slave_setReadIntHandler i2c_slave_setReadIntHandler `(v  1 e 1 0 ]
+"152
+[v _i2c_slave_DefRdInterruptHandler i2c_slave_DefRdInterruptHandler `(v  1 e 1 0 ]
+"157
+[v _i2c_slave_WrCallBack i2c_slave_WrCallBack `(v  1 e 1 0 ]
+"164
+[v _i2c_slave_setWriteIntHandler i2c_slave_setWriteIntHandler `(v  1 e 1 0 ]
+"168
+[v _i2c_slave_DefWrInterruptHandler i2c_slave_DefWrInterruptHandler `(v  1 e 1 0 ]
+"173
+[v _i2c_slave_AddrCallBack i2c_slave_AddrCallBack `(v  1 e 1 0 ]
+"180
+[v _i2c_slave_setAddrIntHandler i2c_slave_setAddrIntHandler `(v  1 e 1 0 ]
+"184
+[v _i2c_slave_DefAddrInterruptHandler i2c_slave_DefAddrInterruptHandler `(v  1 e 1 0 ]
+"189
+[v _i2c_slave_WCOLCallBack i2c_slave_WCOLCallBack `(v  1 e 1 0 ]
+"196
+[v _i2c_slave_setWCOLIntHandler i2c_slave_setWCOLIntHandler `(v  1 e 1 0 ]
+"32 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/i2c1_driver.c
+[v _i2c1_driver_close i2c1_driver_close `T(v  1 e 1 0 ]
+"53
+[v _mssp1_clearIRQ mssp1_clearIRQ `T(v  1 e 1 0 ]
+"97
+[v _i2c1_driver_initSlaveHardware i2c1_driver_initSlaveHardware `(b  1 e 0 0 ]
+"151
+[v _i2c1_driver_restart i2c1_driver_restart `T(v  1 e 1 0 ]
+"171
+[v _i2c1_driver_getRXData i2c1_driver_getRXData `T(uc  1 e 1 0 ]
+[v i1_i2c1_driver_getRXData i2c1_driver_getRXData `T(uc  1 e 1 0 ]
+"176
+[v _i2c1_driver_setAddr i2c1_driver_setAddr `T(v  1 e 1 0 ]
+"181
+[v _i2c1_driver_setMask i2c1_driver_setMask `T(v  1 e 1 0 ]
+"186
+[v _i2c1_driver_TXData i2c1_driver_TXData `T(v  1 e 1 0 ]
+"191
+[v _i2c1_driver_getAddr i2c1_driver_getAddr `T(uc  1 e 1 0 ]
+"196
+[v _i2c1_driver_sendACK i2c1_driver_sendACK `T(v  1 e 1 0 ]
+"202
+[v _i2c1_driver_sendNACK i2c1_driver_sendNACK `T(v  1 e 1 0 ]
+"208
+[v _i2c1_driver_releaseClock i2c1_driver_releaseClock `T(v  1 e 1 0 ]
+"233
+[v _i2c1_driver_isData i2c1_driver_isData `T(b  1 e 0 0 ]
+"238
+[v _i2c1_driver_isRead i2c1_driver_isRead `T(b  1 e 0 0 ]
+"243
+[v _i2c1_driver_isWriteCollision i2c1_driver_isWriteCollision `T(b  1 e 0 0 ]
+"258
+[v _i2c1_driver_setBusCollisionISR i2c1_driver_setBusCollisionISR `T(v  1 e 1 0 ]
+"262
+[v _i2c1_driver_setI2cISR i2c1_driver_setI2cISR `T(v  1 e 1 0 ]
+"52 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"61
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"77
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"55 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"58 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/pwm3.c
+[v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
+"72
+[v _PWM3_LoadDutyValue PWM3_LoadDutyValue `(v  1 e 1 0 ]
+"58 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/pwm4.c
+[v _PWM4_Initialize PWM4_Initialize `(v  1 e 1 0 ]
+"58 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/pwm5.c
+[v _PWM5_Initialize PWM5_Initialize `(v  1 e 1 0 ]
+"62 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"100
+[v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
+"111
+[v _TMR2_Stop TMR2_Stop `(v  1 e 1 0 ]
+"122
+[v _TMR2_Counter8BitGet TMR2_Counter8BitGet `(uc  1 e 1 0 ]
+"136
+[v _TMR2_Counter8BitSet TMR2_Counter8BitSet `(v  1 e 1 0 ]
+"147
+[v _TMR2_Period8BitSet TMR2_Period8BitSet `(v  1 e 1 0 ]
+"76 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/drivers/i2c_slave.h
+[v _i2c_slave_RdInterruptHandler i2c_slave_RdInterruptHandler `*.37(v  1 e 2 0 ]
+"77
+[v _i2c_slave_WrInterruptHandler i2c_slave_WrInterruptHandler `*.37(v  1 e 2 0 ]
+"78
+[v _i2c_slave_AddrInterruptHandler i2c_slave_AddrInterruptHandler `*.37(v  1 e 2 0 ]
+"79
+[v _i2c_slave_WCOLInterruptHandler i2c_slave_WCOLInterruptHandler `*.37(v  1 e 2 0 ]
+"85
+[v _i2c_slave_writeData i2c_slave_writeData `VEuc  1 e 1 0 ]
+"77 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/i2c1_driver.h
+[v _i2c1_driver_busCollisionISR i2c1_driver_busCollisionISR `*.37(v  1 e 2 0 ]
+"78
+[v _i2c1_driver_i2cISR i2c1_driver_i2cISR `*.37(v  1 e 2 0 ]
+[s S256 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"426 /opt/microchip/xc8/v2.00/pic/include/pic16f15325.h
+[u S261 . 1 `S256 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES261  1 e 1 @11 ]
+"546
+[v _TRISA TRISA `VEuc  1 e 1 @18 ]
+"591
+[v _TRISC TRISC `VEuc  1 e 1 @20 ]
+"641
+[v _LATA LATA `VEuc  1 e 1 @24 ]
+"686
+[v _LATC LATC `VEuc  1 e 1 @26 ]
+"1917
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @396 ]
+"1937
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @397 ]
+"2057
+[v _SSP1MSK SSP1MSK `VEuc  1 e 1 @398 ]
+"2127
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @399 ]
+[s S539 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"2236
+[s S548 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S553 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S558 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S563 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S568 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S574 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 R 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 D 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S583 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+]
+[s S589 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 I2C_START1 1 0 :1:3 
+`uc 1 I2C_STOP2 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S595 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ1 1 0 :1:2 
+`uc 1 S2 1 0 :1:3 
+`uc 1 P2 1 0 :1:4 
+`uc 1 DATA_ADDRESS1 1 0 :1:5 
+]
+[s S601 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A1 1 0 :1:5 
+]
+[s S606 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_nA1 1 0 :1:5 
+]
+[s S611 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_nW1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 I2C_DAT1 1 0 :1:5 
+]
+[s S616 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA2 1 0 :1:5 
+]
+[s S621 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS1 1 0 :1:5 
+]
+[u S626 . 1 `S539 1 . 1 0 `S548 1 . 1 0 `S553 1 . 1 0 `S558 1 . 1 0 `S563 1 . 1 0 `S568 1 . 1 0 `S574 1 . 1 0 `S583 1 . 1 0 `S589 1 . 1 0 `S595 1 . 1 0 `S601 1 . 1 0 `S606 1 . 1 0 `S611 1 . 1 0 `S616 1 . 1 0 `S621 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES626  1 e 1 @399 ]
+"2491
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @400 ]
+[s S383 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"2521
+[s S389 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S394 . 1 `uc 1 SSPM01 1 0 :1:0 
+`uc 1 SSPM11 1 0 :1:1 
+`uc 1 SSPM21 1 0 :1:2 
+`uc 1 SSPM31 1 0 :1:3 
+`uc 1 CKP1 1 0 :1:4 
+`uc 1 SSPEN1 1 0 :1:5 
+`uc 1 SSPOV1 1 0 :1:6 
+`uc 1 WCOL1 1 0 :1:7 
+]
+[u S403 . 1 `S383 1 . 1 0 `S389 1 . 1 0 `S394 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES403  1 e 1 @400 ]
+"2611
+[v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @401 ]
+[s S460 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"2658
+[s S469 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADMSK 1 0 :5:1 
+]
+[s S472 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADMSK1 1 0 :1:1 
+`uc 1 ADMSK2 1 0 :1:2 
+`uc 1 ADMSK3 1 0 :1:3 
+`uc 1 ADMSK4 1 0 :1:4 
+`uc 1 ADMSK5 1 0 :1:5 
+]
+[s S479 . 1 `uc 1 SEN1 1 0 :1:0 
+`uc 1 ADMSK11 1 0 :1:1 
+`uc 1 ADMSK21 1 0 :1:2 
+`uc 1 ADMSK31 1 0 :1:3 
+`uc 1 ACKEN1 1 0 :1:4 
+`uc 1 ACKDT1 1 0 :1:5 
+`uc 1 ACKSTAT1 1 0 :1:6 
+`uc 1 GCEN1 1 0 :1:7 
+]
+[s S488 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RSEN1 1 0 :1:1 
+`uc 1 PEN1 1 0 :1:2 
+`uc 1 RCEN1 1 0 :1:3 
+`uc 1 ADMSK41 1 0 :1:4 
+`uc 1 ADMSK51 1 0 :1:5 
+]
+[u S495 . 1 `S460 1 . 1 0 `S469 1 . 1 0 `S472 1 . 1 0 `S479 1 . 1 0 `S488 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES495  1 e 1 @401 ]
+"3757
+[v _T2TMR T2TMR `VEuc  1 e 1 @652 ]
+"3762
+[v _TMR2 TMR2 `VEuc  1 e 1 @652 ]
+"3811
+[v _T2PR T2PR `VEuc  1 e 1 @653 ]
+"3816
+[v _PR2 PR2 `VEuc  1 e 1 @653 ]
+"3865
+[v _T2CON T2CON `VEuc  1 e 1 @654 ]
+[s S1006 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 CKPS 1 0 :3:4 
+`uc 1 ON 1 0 :1:7 
+]
+"3901
+[s S1010 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+]
+[s S1018 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+`uc 1 T2CKPS 1 0 :3:4 
+`uc 1 T2ON 1 0 :1:7 
+]
+[s S1022 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+`uc 1 T2OUTPS1 1 0 :1:1 
+`uc 1 T2OUTPS2 1 0 :1:2 
+`uc 1 T2OUTPS3 1 0 :1:3 
+`uc 1 T2CKPS0 1 0 :1:4 
+`uc 1 T2CKPS1 1 0 :1:5 
+`uc 1 T2CKPS2 1 0 :1:6 
+`uc 1 TMR2ON 1 0 :1:7 
+]
+[u S1031 . 1 `S1006 1 . 1 0 `S1010 1 . 1 0 `S1018 1 . 1 0 `S1022 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES1031  1 e 1 @654 ]
+"4011
+[v _T2HLT T2HLT `VEuc  1 e 1 @655 ]
+[s S907 . 1 `uc 1 MODE 1 0 :5:0 
+`uc 1 CKSYNC 1 0 :1:5 
+`uc 1 CKPOL 1 0 :1:6 
+`uc 1 PSYNC 1 0 :1:7 
+]
+"4044
+[s S912 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+`uc 1 MODE4 1 0 :1:4 
+]
+[s S918 . 1 `uc 1 T2MODE 1 0 :5:0 
+`uc 1 T2CKSYNC 1 0 :1:5 
+`uc 1 T2CKPOL 1 0 :1:6 
+`uc 1 T2PSYNC 1 0 :1:7 
+]
+[s S923 . 1 `uc 1 T2MODE0 1 0 :1:0 
+`uc 1 T2MODE1 1 0 :1:1 
+`uc 1 T2MODE2 1 0 :1:2 
+`uc 1 T2MODE3 1 0 :1:3 
+`uc 1 T2MODE4 1 0 :1:4 
+]
+[u S929 . 1 `S907 1 . 1 0 `S912 1 . 1 0 `S918 1 . 1 0 `S923 1 . 1 0 ]
+[v _T2HLTbits T2HLTbits `VES929  1 e 1 @655 ]
+"4139
+[v _T2CLKCON T2CLKCON `VEuc  1 e 1 @656 ]
+"4219
+[v _T2RST T2RST `VEuc  1 e 1 @657 ]
+[s S972 . 1 `uc 1 RSEL 1 0 :4:0 
+]
+"4244
+[s S974 . 1 `uc 1 RSEL0 1 0 :1:0 
+`uc 1 RSEL1 1 0 :1:1 
+`uc 1 RSEL2 1 0 :1:2 
+`uc 1 RSEL3 1 0 :1:3 
+]
+[s S979 . 1 `uc 1 T2RSEL 1 0 :4:0 
+]
+[s S981 . 1 `uc 1 T2RSEL0 1 0 :1:0 
+`uc 1 T2RSEL1 1 0 :1:1 
+`uc 1 T2RSEL2 1 0 :1:2 
+`uc 1 T2RSEL3 1 0 :1:3 
+]
+[u S986 . 1 `S972 1 . 1 0 `S974 1 . 1 0 `S979 1 . 1 0 `S981 1 . 1 0 ]
+[v _T2RSTbits T2RSTbits `VES986  1 e 1 @657 ]
+"4790
+[v _PWM3DCL PWM3DCL `VEuc  1 e 1 @788 ]
+"4856
+[v _PWM3DCH PWM3DCH `VEuc  1 e 1 @789 ]
+"5026
+[v _PWM3CON PWM3CON `VEuc  1 e 1 @790 ]
+"5089
+[v _PWM4DCL PWM4DCL `VEuc  1 e 1 @792 ]
+"5155
+[v _PWM4DCH PWM4DCH `VEuc  1 e 1 @793 ]
+"5325
+[v _PWM4CON PWM4CON `VEuc  1 e 1 @794 ]
+"5388
+[v _PWM5DCL PWM5DCL `VEuc  1 e 1 @796 ]
+"5454
+[v _PWM5DCH PWM5DCH `VEuc  1 e 1 @797 ]
+"5624
+[v _PWM5CON PWM5CON `VEuc  1 e 1 @798 ]
+[s S288 . 1 `uc 1 SSP1IF 1 0 :1:0 
+`uc 1 BCL1IF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 TX2IF 1 0 :1:6 
+`uc 1 RC2IF 1 0 :1:7 
+]
+"7907
+[u S296 . 1 `S288 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES296  1 e 1 @1807 ]
+[s S875 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+]
+"7953
+[u S878 . 1 `S875 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES878  1 e 1 @1808 ]
+[s S269 . 1 `uc 1 SSP1IE 1 0 :1:0 
+`uc 1 BCL1IE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 TX2IE 1 0 :1:6 
+`uc 1 RC2IE 1 0 :1:7 
+]
+"8196
+[u S277 . 1 `S269 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES277  1 e 1 @1817 ]
+"8370
+[v _PMD0 PMD0 `VEuc  1 e 1 @1942 ]
+"8415
+[v _PMD1 PMD1 `VEuc  1 e 1 @1943 ]
+"8463
+[v _PMD2 PMD2 `VEuc  1 e 1 @1944 ]
+"8508
+[v _PMD3 PMD3 `VEuc  1 e 1 @1945 ]
+"8558
+[v _PMD4 PMD4 `VEuc  1 e 1 @1946 ]
+"8598
+[v _PMD5 PMD5 `VEuc  1 e 1 @1947 ]
+"9666
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
+"9806
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
+"9846
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @2192 ]
+"9903
+[v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
+"9954
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
+"10012
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"16601
+[v _SSP1CLKPPS SSP1CLKPPS `VEuc  1 e 1 @7877 ]
+"16659
+[v _SSP1DATPPS SSP1DATPPS `VEuc  1 e 1 @7878 ]
+"17315
+[v _RC1PPS RC1PPS `VEuc  1 e 1 @7969 ]
+"17359
+[v _RC2PPS RC2PPS `VEuc  1 e 1 @7970 ]
+"17403
+[v _RC3PPS RC3PPS `VEuc  1 e 1 @7971 ]
+"17447
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @7972 ]
+"17491
+[v _RC5PPS RC5PPS `VEuc  1 e 1 @7973 ]
+"17535
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+"17580
+[v _WPUA WPUA `VEuc  1 e 1 @7993 ]
+"17630
+[v _ODCONA ODCONA `VEuc  1 e 1 @7994 ]
+"17675
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @7995 ]
+"17920
+[v _ANSELC ANSELC `VEuc  1 e 1 @8014 ]
+"17970
+[v _WPUC WPUC `VEuc  1 e 1 @8015 ]
+"18020
+[v _ODCONC ODCONC `VEuc  1 e 1 @8016 ]
+"18070
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @8017 ]
+"36 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/drivers/i2c_slave.c
+[v _state state `VEE6869  1 e 1 0 ]
+"37
+[v _nextState nextState `VEE6869  1 e 1 0 ]
+"38
+[v _i2c1Data i2c1Data `VEuc  1 e 1 0 ]
+"39
+[v _sAddr sAddr `VEuc  1 e 1 0 ]
+"50 /home/james/MPLABXProjects/PWMandI2C.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"80
+[v main@buf buf `[2]uc  1 a 2 75 ]
+"165
+} 0
+"112 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/drivers/i2c_slave.c
+[v _i2c_slave_read i2c_slave_read `(uc  1 e 1 0 ]
+{
+"114
+} 0
+"171 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/i2c1_driver.c
+[v _i2c1_driver_getRXData i2c1_driver_getRXData `T(uc  1 e 1 0 ]
+{
+"174
+} 0
+"45 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/drivers/i2c_slave.c
+[v _i2c_slave_open i2c_slave_open `(v  1 e 1 0 ]
+{
+"56
+} 0
+"164
+[v _i2c_slave_setWriteIntHandler i2c_slave_setWriteIntHandler `(v  1 e 1 0 ]
+{
+[v i2c_slave_setWriteIntHandler@handler handler `*.37(v  1 p 2 3 ]
+"166
+} 0
+"196
+[v _i2c_slave_setWCOLIntHandler i2c_slave_setWCOLIntHandler `(v  1 e 1 0 ]
+{
+[v i2c_slave_setWCOLIntHandler@handler handler `*.37(v  1 p 2 3 ]
+"198
+} 0
+"148
+[v _i2c_slave_setReadIntHandler i2c_slave_setReadIntHandler `(v  1 e 1 0 ]
+{
+[v i2c_slave_setReadIntHandler@handler handler `*.37(v  1 p 2 3 ]
+"150
+} 0
+"140
+[v _i2c_slave_setIsrHandler i2c_slave_setIsrHandler `(v  1 e 1 0 ]
+{
+[v i2c_slave_setIsrHandler@handler handler `*.37(v  1 p 2 5 ]
+"142
+} 0
+"262 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/i2c1_driver.c
+[v _i2c1_driver_setI2cISR i2c1_driver_setI2cISR `T(v  1 e 1 0 ]
+{
+[v i2c1_driver_setI2cISR@handler handler `*.37(v  1 p 2 3 ]
+"264
+} 0
+"180 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/drivers/i2c_slave.c
+[v _i2c_slave_setAddrIntHandler i2c_slave_setAddrIntHandler `(v  1 e 1 0 ]
+{
+[v i2c_slave_setAddrIntHandler@handler handler `*.37(v  1 p 2 3 ]
+"182
+} 0
+"181 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/i2c1_driver.c
+[v _i2c1_driver_setMask i2c1_driver_setMask `T(v  1 e 1 0 ]
+{
+[v i2c1_driver_setMask@mask mask `uc  1 a 1 wreg ]
+[v i2c1_driver_setMask@mask mask `uc  1 a 1 wreg ]
+"183
+[v i2c1_driver_setMask@mask mask `uc  1 a 1 3 ]
+"184
+} 0
+"258
+[v _i2c1_driver_setBusCollisionISR i2c1_driver_setBusCollisionISR `T(v  1 e 1 0 ]
+{
+[v i2c1_driver_setBusCollisionISR@handler handler `*.37(v  1 p 2 3 ]
+"260
+} 0
+"176
+[v _i2c1_driver_setAddr i2c1_driver_setAddr `T(v  1 e 1 0 ]
+{
+[v i2c1_driver_setAddr@addr addr `uc  1 a 1 wreg ]
+[v i2c1_driver_setAddr@addr addr `uc  1 a 1 wreg ]
+"178
+[v i2c1_driver_setAddr@addr addr `uc  1 a 1 3 ]
+"179
+} 0
+"97
+[v _i2c1_driver_initSlaveHardware i2c1_driver_initSlaveHardware `(b  1 e 0 0 ]
+{
+"139
+} 0
+"10 /opt/microchip/xc8/v2.00/pic/sources/c99/common/xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 6 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 5 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 3 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 4 ]
+"44
+} 0
+"43 /opt/microchip/xc8/v2.00/pic/sources/c99/common/fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 70 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 69 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 60 ]
+"70
+} 0
+"8 /opt/microchip/xc8/v2.00/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S1343 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S1348 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S1351 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1343 1 fAsBytes 4 0 `S1348 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S1351  1 a 4 30 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 24 ]
+[s S1420 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S1423 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S1420 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S1423  1 a 2 34 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 29 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 28 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 23 ]
+"8
+[v ___flmul@b b `d  1 p 4 10 ]
+[v ___flmul@a a `d  1 p 4 14 ]
+"205
+} 0
+"4 /opt/microchip/xc8/v2.00/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 2 ]
+"5
+[v __Umul8_16@product product `ui  1 a 2 0 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 3 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 4 ]
+"60
+} 0
+"10 /opt/microchip/xc8/v2.00/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 59 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 58 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 57 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 56 ]
+"10
+[v ___fladd@b b `d  1 p 4 36 ]
+[v ___fladd@a a `d  1 p 4 40 ]
+"237
+} 0
+"50 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"59
+} 0
+"62 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"86
+} 0
+"58 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/pwm5.c
+[v _PWM5_Initialize PWM5_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"58 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/pwm4.c
+[v _PWM4_Initialize PWM4_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"58 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/pwm3.c
+[v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"77 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"91
+} 0
+"55 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"107
+} 0
+"61 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"75
+} 0
+"72 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/pwm3.c
+[v _PWM3_LoadDutyValue PWM3_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM3_LoadDutyValue@dutyValue dutyValue `us  1 p 2 71 ]
+"79
+} 0
+"52 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"74
+} 0
+"62 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/drivers/i2c_slave.c
+[v _i2c_slave_ISR i2c_slave_ISR `(v  1 e 1 0 ]
+{
+"106
+} 0
+"53 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/i2c1_driver.c
+[v _mssp1_clearIRQ mssp1_clearIRQ `T(v  1 e 1 0 ]
+{
+"56
+} 0
+"157 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/drivers/i2c_slave.c
+[v _i2c_slave_WrCallBack i2c_slave_WrCallBack `(v  1 e 1 0 ]
+{
+"162
+} 0
+"168
+[v _i2c_slave_DefWrInterruptHandler i2c_slave_DefWrInterruptHandler `(v  1 e 1 0 ]
+{
+"170
+} 0
+"186 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/i2c1_driver.c
+[v _i2c1_driver_TXData i2c1_driver_TXData `T(v  1 e 1 0 ]
+{
+[v i2c1_driver_TXData@d d `uc  1 a 1 wreg ]
+[v i2c1_driver_TXData@d d `uc  1 a 1 wreg ]
+"188
+[v i2c1_driver_TXData@d d `uc  1 a 1 0 ]
+"189
+} 0
+"189 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/drivers/i2c_slave.c
+[v _i2c_slave_WCOLCallBack i2c_slave_WCOLCallBack `(v  1 e 1 0 ]
+{
+"194
+} 0
+"108
+[v _i2c_slave_BusCollisionISR i2c_slave_BusCollisionISR `(v  1 e 1 0 ]
+{
+"110
+} 0
+"133
+[v _i2c_slave_RdCallBack i2c_slave_RdCallBack `(v  1 e 1 0 ]
+{
+"138
+} 0
+"152
+[v _i2c_slave_DefRdInterruptHandler i2c_slave_DefRdInterruptHandler `(v  1 e 1 0 ]
+{
+"154
+} 0
+"171 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/i2c1_driver.c
+[v i1_i2c1_driver_getRXData i2c1_driver_getRXData `T(uc  1 e 1 0 ]
+{
+"174
+} 0
+"173 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/drivers/i2c_slave.c
+[v _i2c_slave_AddrCallBack i2c_slave_AddrCallBack `(v  1 e 1 0 ]
+{
+"178
+} 0
+"184
+[v _i2c_slave_DefAddrInterruptHandler i2c_slave_DefAddrInterruptHandler `(v  1 e 1 0 ]
+{
+"186
+} 0
+"191 /home/james/MPLABXProjects/PWMandI2C.X/mcc_generated_files/i2c1_driver.c
+[v _i2c1_driver_getAddr i2c1_driver_getAddr `T(uc  1 e 1 0 ]
+{
+"194
+} 0
+"151
+[v _i2c1_driver_restart i2c1_driver_restart `T(v  1 e 1 0 ]
+{
+"154
+} 0
+"208
+[v _i2c1_driver_releaseClock i2c1_driver_releaseClock `T(v  1 e 1 0 ]
+{
+"211
+} 0
+"243
+[v _i2c1_driver_isWriteCollision i2c1_driver_isWriteCollision `T(b  1 e 0 0 ]
+{
+"246
+} 0
+"238
+[v _i2c1_driver_isRead i2c1_driver_isRead `T(b  1 e 0 0 ]
+{
+"241
+} 0
+"233
+[v _i2c1_driver_isData i2c1_driver_isData `T(b  1 e 0 0 ]
+{
+"236
+} 0
